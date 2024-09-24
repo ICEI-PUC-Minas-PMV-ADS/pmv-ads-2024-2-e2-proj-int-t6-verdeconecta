@@ -8,24 +8,25 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+1. Julia, 30 anos, Designer Gráfica: 
 
-Utilize também como referência o exemplo abaixo:
+   Julia é uma jovem profissional que se preocupa com o impacto ambiental de suas escolhas. Ela decidiu se tornar vegetariana há dois anos por motivos éticos e ambientais. Ela adora cozinhar e experimenta novas receitas vegetarianas nos finais de semana. Para ela, a dieta é uma extensão de seu compromisso com a sustentabilidade. 
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+2. Andressa, 34 anos, Professora de Yoga: 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+   Andressa adotou o vegetarianismo na adolescência como uma forma de alinhar sua alimentação com sua filosofia de vida holística e espiritual. Para ela, ser vegetariana está profundamente conectado com seu estilo de vida e prática de yoga. Ela ensina aos seus alunos sobre os benefícios de uma dieta à base de plantas para o corpo e a mente. 
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3. Lucas, 40 anos, Chef de Cozinha Vegetariana: 
+
+   Lucas é um chef especializado em pratos vegetarianos e veganos. Ele dirige um restaurante premiado que se destaca por suas criações inovadoras e saborosas. Ele também oferece workshops e cursos de culinária para ensinar outros chefs e entusiastas a cozinhar pratos sem carne. A paixão de Lucas pela comida e pela filosofia vegetariana é evidente em cada prato que prepara. 
+
+4. Ana, 32 anos, Nutricionista e Consultora de Alimentação Vegetariana: 
+
+   Ana é uma nutricionista especializada em dietas vegetarianas. Ela trabalha com clientes para ajudá-los a adotar e manter uma alimentação equilibrada e saudável. Além de consultas individuais, Ana oferece palestras e escreve artigos sobre os benefícios da alimentação à base de plantas e como planejar uma dieta nutricionalmente completa. 
+
+5. João, 27 anos, Blogger e Influenciador de Alimentação Vegetariana: 
+
+   João é um influenciador digital que se dedica a criar conteúdo sobre receitas, dicas e estilo de vida vegetariano. Suas redes sociais são repletos de receitas criativas, análises de produtos e informações sobre o impacto do vegetarianismo na saúde e no meio ambiente. Ele também colabora com marcas de produtos vegetais para promover uma alimentação mais sustentável. 
 
 ## Histórias de Usuários
 
@@ -33,17 +34,19 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|Cliente   | Registrar diariamente refeições        | Controlar nutrientes               |
+|Cliente       | Acompanhar nutrientes                  | Controlar nutrientes  |
+|Cliente       | Monitorar progresso com gráficos e relatórios               | Acompanhar o progresso   |
+|Cliente       | Definir metas                  | Controlar ingestão de alimentos   |
+|Cliente       | Ter contato com o nutricionista que está me acompanhando                  |Ajustes rápidos no plano alimentar, respostas a dúvidas imediatas etc   |
+|Nutricionista        | Desejo postar dicas nutricionais                  | Ajudar os clientes em seus objetivos   |
+|Nutricionista        | Visualizar relatórios detalhados do consumo de nutrientes dos meus pacientes                   |Poder fazer recomendações mais precisas e eficazes    |
+|Nutricionista        | Ter contato com o cliente que estou acompanhando                  | Identificação precoce de desvios, adaptação contínua do plano alimentar,     |
+|Administrador         | Controle com todos os perfis de usuários                  | Gerenciar contas e solucionar problemas    |
+|Administrador         | Gerenciamento de conteúdo                   | Para que o conteúdo do site esteja sempre atualizado e relevante     |
+|Administrador         | Monitoramento de Atividade                  | Para entender o comportamento dos usuários     |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
