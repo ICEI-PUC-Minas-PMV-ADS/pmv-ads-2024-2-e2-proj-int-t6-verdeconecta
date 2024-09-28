@@ -1,31 +1,76 @@
-# Plano de Testes de Software
+ Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
+|Caso de Teste    | CT-X - Título Caso de Teste |
+|:---|:---|
+| Requisitos Associados | RF-X |
+| Objetivo do Teste | Descrição do objetivo do teste |
+| Passos | Indicar passos para a execução do teste |
+| Critérios de êxito | Indicar os critérios de êxito  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
-Por exemplo:
- 
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
-|  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+|Caso de Teste    | CT-01 – Verificar a funcionalidade do gerenciamento do  cadastro de usuários. |
+|:---|:---|
+| Requisitos Associados | RF-01 – O sistema deve permitir que seus usuários gerenciem seus cadastros.   |
+| Objetivo do Teste | Verificar se o usuário consegue incluir novos cadastros. |
+| Passos | 1. Acessar a página de cadastro; 2. Preencher todos os campos obrigatórios do formulário; 3. Clicar no botão "Cadastrar"; 4. Verificar se uma mensagem de sucesso é exibida e se o usuário é redirecionado para a página de login.  |
+| Critérios de êxito | O cadastro deve ser realizado com sucesso, exibindo uma mensagem de confirmação e redirecionando o usuário para a página de login  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|Caso de Teste    | CT-02 – Verificar a funcionalidade do gerenciamento do  cadastro de usuários. |
+|:---|:---|
+| Requisitos Associados | RF-01 – O sistema deve permitir que seus usuários gerenciem seus cadastros.     |
+| Objetivo do Teste | Verificar se o usuário consegue alterar dados cadastrais. |
+| Passos | 1. Acessar a página de cadastro; 2. clicar no botão Alterar Cadastro 3. Preencher todos os campos a serem alterados; 4. Clicar no botão "Salvar"; 4. Verificar se uma mensagem de sucesso é exibida e se o usuário é redirecionado para a página de login.   |
+| Critérios de êxito | O cadastro deve ser Alterado com sucesso, exibindo uma mensagem de confirmação e redirecionando o usuário para a página de login.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-03– Login de usuários |
+|:---|:---|
+| Requisitos Associados | RF-02 O sistema deve verificar se o e-mail e senha estão cadastrados.     |
+| Objetivo do Teste | Verificar se o sistema confirma o e–mail e a senha do usuário. |
+| Passos | 1. Entrar na página Login; 2. preencher o e-mail e senha obrigatório; 3. clicar no botão Login; 4. Verificar se uma mensagem de sucesso é exibida e se o usuário é redirecionado para a página de perfil.   |
+| Critérios de êxito | O sistema deve exibir uma mensagem confirmando que o Login foi realizado.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-04– Login de usuários |
+|:---|:---|
+| Requisitos Associados | RF-02 O sistema deve verificar se o e-mail e senha estão cadastrados.     |
+| Objetivo do Teste | O sistema deve verificar se o e-mail e senha estão cadastrados. |
+| Passos | 1. Entrar na página Login; 2. preencher o e-mail ou senha que não estão cadastrados; 3. clicar no botão Login; 4. Verificar se uma mensagem de “E-mail ou senha inválidos”.   |
+| Critérios de êxito | O sistema deve exibir uma mensagem “E-mail ou senha inválidos”.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+|Caso de Teste    | CT-05– Redefinição de senha |
+|:---|:---|
+| Requisitos Associados | RF-03– Redefinição de senha.    |
+| Objetivo do Teste | O sistema deve verificar se o e-mail já está cadastrado. |
+| Passos | 1. Entrar na página Redefinir Senha; 2. preencher o e-mail cadastrado; 3. clicar no botão Redefinir senha; 4. Verificar se uma mensagem de sucesso é exibida e se um e-mail para redefinir senha é enviado ao usuário.  |
+| Critérios de êxito | O sistema deve exibir uma mensagem “E-mail para redefinir senha enviado”.  |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
