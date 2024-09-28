@@ -1,15 +1,55 @@
-# Plano de Testes de Usabilidade
+Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+1. Objetivo
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (ou cenários) em função dos requisitos levantados/implementados, dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), da ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+Avaliar a usabilidade da aplicação Verde Conecta, identificando possíveis problemas de interface e fluxo do usuário, e fornecendo sugestões de melhoria para proporcionar uma experiência mais fácil e intuitiva, garantindo a satisfação dos clientes finais.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+2. Estratégias de Teste
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+· Teste de Navegação: Avaliar a facilidade de navegação dentro da aplicação.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+· Teste de Aprendizado: Avaliar a curva de aprendizado para novos usuários.
+
+· Teste de Eficiência: Medir o tempo necessário para realizar tarefas comuns.
+
+· Teste de Usabilidade: Coletar feedback dos usuários sobre a experiência de uso.
+
+· Teste de Satisfação: Obter a opinião dos usuários sobre a satisfação geral com a aplicação.
+
+3. Casos de Teste
+
+· CT-01 – Gerenciar cadastro.
+
+· CT-02 – Login de usuário.
+
+· CT-03 – Redefinição de senha.
+
+· CT-04 – Registro de refeições.
+
+· CT-05 – Dicas nutricionais.
+
+· CT-06 – Permitir o usuário criar metas e acompanhar o processo.
+
+4. Métricas de Avaliação
+
+· Tempo necessário para completar cada tarefa.
+
+· Número de erros cometidos durante a execução das tarefas.
+
+· Nível de satisfação do usuário com a experiência geral.
+
+5. Análise de Resultados
+
+Um grupo de usuários serão observados enquanto realizem tarefas na aplicação, identificando áreas de dificuldade e sugestões de melhoria. As melhorias e correções necessárias para garantir uma melhor experiência do usuário serão avaliadas e priorizadas de acordo com o seu grau de impacto na usabilidade da aplicação.
+
+6. Responsabilidades
+
+· Equipe de Teste de Usabilidade: Responsáveis por coletar feedback dos usuários finais e analisar os resultados obtidos.
+
+· Equipe de Desenvolvimento: Responsável por implementar as alterações recomendadas para melhorar a usabilidade.
+
+· Grupo de usuários representativos: Responsáveis por testar a aplicação, fornecendo feedbacks valiosos para a identificação de dificuldades durante o manuseio do aplicativo e pontos de melhoria.
+
+7. Cronograma
+
+Os testes de usabilidade serão realizados em aproximadamente três dias. A análise dos resultados e a implementação de melhorias e correções ocorrerão nas semanas subsequentes, conforme necessário.
