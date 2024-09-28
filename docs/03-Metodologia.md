@@ -56,6 +56,8 @@ A equipe está organizando e distribuindo as tarefas por meio do quadro Kanban d
  
 ![Captura de tela 2024-09-28 185249](https://github.com/user-attachments/assets/3c770806-7041-4703-9617-57124f7a9e26)
 
+O quadro segue a seguinte distribuição:
+
 - **Product Backlog:** Esta coluna marca o início de todas as tarefas das etapas que o grupo irá trabalhar, servindo como um repositório de ideias e requisitos.
 
 - **A Fazer:** Representa as tarefas que serão abordadas na sprint atual, oferecendo uma visão clara das prioridades a serem executadas.
