@@ -52,7 +52,7 @@ A divisão dos papéis foi determinada seguindo a metodologia Scrum:
 
 ### Processo
 
-A equipe está organizando e distribuindo as tarefas por meio do quadro Kanban disponível no GitHub. Essa abordagem otimiza a visualização do progresso e a gestão das atividades, permitindo que todos os membros acompanhem o fluxo de trabalho e colaborem de maneira mais integrada:
+A equipe está organizando e distribuindo as tarefas por meio do quadro [Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1506) disponível no GitHub. Essa abordagem otimiza a visualização do progresso e a gestão das atividades, permitindo que todos os membros acompanhem o fluxo de trabalho e colaborem de maneira mais integrada:
  
 ![Captura de tela 2024-09-28 185249](https://github.com/user-attachments/assets/3c770806-7041-4703-9617-57124f7a9e26)
 
