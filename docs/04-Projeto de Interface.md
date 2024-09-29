@@ -33,6 +33,20 @@ Quando o usuário acessa o website e não está logado na plataforma, na barra d
  ![Login](https://github.com/user-attachments/assets/69ae96c6-94c6-40e0-996a-a457f8208bce)
 
 
+
+![PaginaLogadaPaciente](https://github.com/user-attachments/assets/b603be51-a1fc-481b-9dcb-c8683781e8cf)
+
+![QuestionarioPaciente](https://github.com/user-attachments/assets/2da212a8-f0e1-4c92-92b2-bdb4919c1c00)
+
+![PaginaInclusaoAlimentos](https://github.com/user-attachments/assets/98b0de72-75da-45d9-9e86-4362082a9eca)
+
+![PaginaLogadaNutricionista](https://github.com/user-attachments/assets/38710439-9683-45cb-91b6-80932f29b437)
+
+
+
+
+
+
  
 
 > **Links Úteis**:
