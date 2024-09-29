@@ -5,9 +5,7 @@ O projeto utiliza a metodologia ágil Scrum, que fornece uma estrutura baseada e
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+O versionamento foi feito pelo GitHub Desktop, que foi utilizado para gerenciar o repositório hospedado no GitHub.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
@@ -54,7 +52,8 @@ A divisão dos papéis foi determinada seguindo a metodologia Scrum:
 
 A equipe está organizando e distribuindo as tarefas por meio do quadro [Kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1506) disponível no GitHub. Essa abordagem otimiza a visualização do progresso e a gestão das atividades, permitindo que todos os membros acompanhem o fluxo de trabalho e colaborem de maneira mais integrada:
  
-![Captura de tela 2024-09-28 185249](https://github.com/user-attachments/assets/3c770806-7041-4703-9617-57124f7a9e26)
+![Captura de tela 2024-09-28 232639](https://github.com/user-attachments/assets/ce6bad06-15d5-4deb-80e8-1f40bab8bd9f)
+
 
 O quadro segue a seguinte distribuição:
 
@@ -70,18 +69,14 @@ O quadro segue a seguinte distribuição:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Visual Studio Code.
+- Teams
+- Figma e Lucidchart
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+- O Visual Studio Code oferece integração nativa com o GitHub, permitindo gerenciar repositórios, realizar commits e resolver conflitos diretamente do editor, facilitando o fluxo de trabalho de desenvolvimento.
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+- O Microsoft Teams centraliza comunicação, colaboração e compartilhamento de arquivos em uma plataforma segura e acessível, otimizando o trabalho em equipe.
+
+- Figma e Lucidchart permitem colaboração em tempo real, tornando o trabalho em equipe mais eficiente; Figma se foca na criação de wireframes interativos e designs responsivos, enquanto Lucidchart se especializa em diagramas com uma interface intuitiva e recursos pré-definidos, facilitando a visualização de ideias.
+
+A seção de **Projetos** do GitHub está sendo utilizada para aprimorar a gestão e o planejamento, facilitando a colaboração e o acompanhamento de tarefas por meio de quadros Kanban e automações eficientes. Essa abordagem otimiza o fluxo de trabalho e proporciona maior transparência nas atividades da equipe.
