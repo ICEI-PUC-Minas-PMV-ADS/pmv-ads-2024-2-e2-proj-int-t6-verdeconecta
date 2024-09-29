@@ -66,8 +66,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-008| Permitir o usuário criar metas e acompanhar o progresso   | Baixa   |
 |RF-009| Perfil do usuário com informações importantes como alergias.   | Baixa   |
 |RF-010| Permitir a criação de notas em cada relatório   | Baixa   |
-|RF-011| Moderar dicas nutricionais   | Baixa   |
-|RF-012| Comentar dicas nutricionais  | Baixa   |
+|RF-011| Avaliar dicas nutricionais    | Baixa   |
+
 
 ### Requisitos não Funcionais
 
@@ -85,7 +85,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido um módulo de backend e frontend        |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
