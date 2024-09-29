@@ -11,12 +11,8 @@ Por isso, a criação de um aplicativo específico para controle nutricional de 
 Com a crescente preocupação com bem-estar e a popularização de ferramentas digitais voltadas para o cuidado com a saúde, um site ou aplicativo de controle nutricional voltado para vegetarianos tem o potencial de ser uma ferramenta poderosa para promover mudanças positivas nos hábitos de alimentação e, consequentemente, na qualidade de vida. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
+O problema que o site busca resolver é a dificuldade que vegetarianos têm em manter uma dieta equilibrada e nutritiva. Eles enfrentam desafios na ingestão adequada de nutrientes essenciais, o que pode levar a deficiências nutricionais. Além disso, a falta de informações confiáveis e ferramentas práticas complica o planejamento de refeições. 
 
 ## Objetivos
 
