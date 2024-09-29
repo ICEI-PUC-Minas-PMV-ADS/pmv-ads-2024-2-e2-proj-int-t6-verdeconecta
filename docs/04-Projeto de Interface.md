@@ -16,7 +16,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 Foram desenvolvidos wireframes interativos e de média fidelidade na ferramenta Figma, para ajudar na definição da estrutura da solução web e para facilitar o entendimento da relação entre as possíveis páginas existentes no sistema. Para visualizar o prótipo interativo basta acessar o link a seguir:
 
-https://www.figma.com/proto/YDIA1FgzB7nCnjPv8cu76y/Verde-Conecta?page-id=44%3A371&node-id=61-10&node-type=canvas&viewport=685%2C21%2C0.13&t=OSg5JIxDwg84yEBv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=61%3A10
+[Protótipo interativo]https://www.figma.com/proto/YDIA1FgzB7nCnjPv8cu76y/Verde-Conecta?page-id=44%3A371&node-id=61-10&node-type=canvas&viewport=685%2C21%2C0.13&t=OSg5JIxDwg84yEBv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=61%3A10
 
 
 
