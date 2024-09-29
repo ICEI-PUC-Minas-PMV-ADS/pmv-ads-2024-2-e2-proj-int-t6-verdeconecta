@@ -5,7 +5,7 @@ O projeto utiliza a metodologia ágil Scrum, que fornece uma estrutura baseada e
 
 ## Controle de Versão
 
-O versionamento foi feito pelo GitHub Desktop, que foi utilizado para gerenciar o repositório hospedado no GitHub.
+O versionamento é realizado pelo GitHub Desktop, que está sendo utilizado para gerenciar o repositório hospedado no GitHub.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
