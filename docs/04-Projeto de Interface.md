@@ -20,6 +20,7 @@ Foram desenvolvidos wireframes interativos e de média fidelidade na ferramenta 
 
 Home Page:
 A home Page é o ponto inicial do projeto. Ao entrar no endereço do website, o usuário será direcionado para essa página. Nela contém um banner inicial sobreposto com o botão que dá acesso às demais páginas. Abaixo, terão cards explicativos sobre as funcionalidades do site. 
+
 ![HomePage](https://github.com/user-attachments/assets/677e68ed-22f5-40ac-ae4b-660a9f54e95d)
 
 
