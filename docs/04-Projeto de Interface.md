@@ -40,36 +40,44 @@ A tela de Página logada de Paciente é a página em que o usuário encontrará 
 
 Página Questionário Paciente:
 Nesta página o usuário acessará o questionário que deverá ser preenchido pré-consulta para obtermos os dados e definirmos o perfil do paciente.
+
 ![QuestionarioPaciente](https://github.com/user-attachments/assets/2da212a8-f0e1-4c92-92b2-bdb4919c1c00)
 
 
 Página Diário:
 Nesta página o usuário poderá acessar o link para o lançamento dos alimentos ingeridos e aferição dos nutrientes obtidos com estes alimentos, bem como comparativos com a meta diária.
+
 ![6  Diario](https://github.com/user-attachments/assets/e4f319e0-ba95-4c1d-8c8e-5651b3512547)
 
 
 Página Inclusão de Alimentos:
 Nesta página o usuário poderá efetivar o lançamento dos alimentos ingeridos, acessando o banco de dados do site.
+
 ![PaginaInclusaoAlimentos](https://github.com/user-attachments/assets/98b0de72-75da-45d9-9e86-4362082a9eca)
 
 
 Página Logada de Nutricionista:
 Página dedicada ao tipo de usuário Nutricionista para seleção dos pacientes, visualização das informações de paciente, possibilidade de postagem no blog e alterações de plano alimentar e metas dos pacientes.
+
 ![PaginaLogadaNutricionista](https://github.com/user-attachments/assets/38710439-9683-45cb-91b6-80932f29b437)
 
 
 Página Dicas Nutricionais - Blog
 Página dedicada à postagem de artigos contendo dicas nutricionais para as pessoas que são vegetarianas. Conteúdo será postado pelos nutricionistas e avaliado pelo administrador do sistema.
+
 ![9  PaginaDicasNutricionais](https://github.com/user-attachments/assets/2d92a439-cea0-4567-9dfc-78d986b4087c)
 
 
-Página Dicas Nutricionais - Blog
-![10  PaginaDicasNutricionais1](https://github.com/user-attachments/assets/24184057-8d98-4510-b083-2fcc8e34dc43)
+Página Dicas Nutricionais 1 - Blog
 Demonstração do acesso a um dos artigos com dicas nutricionais para as pessoas que são vegetarianas, com possibilidade de pacientes curtirem ou não curtirem o artigo.
 
+![10  PaginaDicasNutricionais1](https://github.com/user-attachments/assets/24184057-8d98-4510-b083-2fcc8e34dc43)
+
+
+Página Dicas Nutricionais 2 - Blog
+Demonstração extra do acesso a um dos artigos com dicas nutricionais para as pessoas que são vegetarianas, com possibilidade de pacientes curtirem ou não curtirem o artigo.
 
 ![11  PaginaDicasNutricionais2](https://github.com/user-attachments/assets/8c5381ff-b272-4291-834d-4d439cededf0)
-Demonstração extra do acesso a um dos artigos com dicas nutricionais para as pessoas que são vegetarianas, com possibilidade de pacientes curtirem ou não curtirem o artigo.
 
 
 
