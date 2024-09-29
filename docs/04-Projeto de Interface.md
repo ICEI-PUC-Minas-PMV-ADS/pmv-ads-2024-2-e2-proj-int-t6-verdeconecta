@@ -19,12 +19,22 @@ Foram desenvolvidos wireframes interativos e de média fidelidade na ferramenta 
 [Protótipo interativo](https://www.figma.com/proto/YDIA1FgzB7nCnjPv8cu76y/Verde-Conecta?page-id=44%3A371&node-id=61-10&node-type=canvas&viewport=685%2C21%2C0.13&t=OSg5JIxDwg84yEBv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=61%3A10)
 
 Home Page:
-A home Page é o ponto inicial do projeto. Ao entrar no endereço do website, o usuário será direcionado para essa página. Nela contém um banner inicial sobreposto com o botão que dá acesso a página de busca d. Abaixo, terá um texto explicativo sobre a importância da adoção. Em seguida, algumas dicas sobre cuidados com animais e um botão que encaminha o usuário para a página de dicas.
-
+A home Page é o ponto inicial do projeto. Ao entrar no endereço do website, o usuário será direcionado para essa página. Nela contém um banner inicial sobreposto com o botão que dá acesso às demais páginas. Abaixo, terão cards explicativos sobre as funcionalidades do site. 
 ![HomePage](https://github.com/user-attachments/assets/677e68ed-22f5-40ac-ae4b-660a9f54e95d)
 
 
+Tela Cadastro
+A tela de cadastro é necessária para criar o cadastro no site, distinguindo dois perfis: Paciente e Nutricionista:
+![Cadastro](https://github.com/user-attachments/assets/6411f804-a946-4b72-a795-0f7a06a93c34)
+
+
+Tela de Login:
+Quando o usuário acessa o website e não está logado na plataforma, na barra de navegação, no topo da página, haverá um botão de acesso rápido ao login do sistema. Nesta página haverá inputs em que o usuário deverá digitar suas credenciais de acesso. Há um botão para cadastro, no caso de o usuário ainda não ser cadastrado e um botão para recuperação da senha, se o usuário a tiver esquecido.
+ ![Login](https://github.com/user-attachments/assets/69ae96c6-94c6-40e0-996a-a457f8208bce)
+
+
  
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 > - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
