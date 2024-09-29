@@ -27,15 +27,9 @@ etiquetas:
 - `project management`: Para atividades relacionadas ao planejamento, coordenação e gerenciamento do projeto
 - `tests`: Para atividades relacionadas a elaboração e execução de testes de software
 
+Na configuração do projeto, optamos por utilizar a branch principal para simplificar o fluxo de trabalho. Cada integrante da equipe é responsável por suas respectivas páginas, o que facilita a divisão de tarefas e evita conflitos.
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+A gerência de commits e merges é feita de forma cuidadosa: os desenvolvedores realizam commits frequentes com mensagens claras que descrevem as alterações. Antes de realizar um merge na branch principal, é feita uma revisão dos códigos, garantindo que todas as mudanças sejam consistentes e estejam em conformidade com os padrões do projeto.
 
 ## Gerenciamento de Projeto
 
@@ -69,9 +63,9 @@ O quadro segue a seguinte distribuição:
 
 As ferramentas empregadas no projeto são:
 
-- Visual Studio Code.
-- Teams
-- Figma e Lucidchart
+- Visual Studio Code :heavy_check_mark:
+- Teams :heavy_check_mark:
+- Figma e Lucidchart :heavy_check_mark:
 
 - O Visual Studio Code oferece integração nativa com o GitHub, permitindo gerenciar repositórios, realizar commits e resolver conflitos diretamente do editor, facilitando o fluxo de trabalho de desenvolvimento.
 
