@@ -21,7 +21,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Projeto da Base de Dados
 
-![Lógico_1](https://github.com/user-attachments/assets/2d561f78-a821-40de-8e10-1b1349f42101)
+![Lógico_1](https://github.com/user-attachments/assets/8a9a9f81-d35a-4379-897e-51b222e94cf9)
 
 
 ## Tecnologias Utilizadas
