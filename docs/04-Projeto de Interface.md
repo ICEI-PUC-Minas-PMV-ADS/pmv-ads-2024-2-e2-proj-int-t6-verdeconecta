@@ -18,6 +18,10 @@ Foram desenvolvidos wireframes interativos e de média fidelidade na ferramenta 
 
 [Protótipo interativo](https://www.figma.com/proto/YDIA1FgzB7nCnjPv8cu76y/Verde-Conecta?page-id=44%3A371&node-id=61-10&node-type=canvas&viewport=685%2C21%2C0.13&t=OSg5JIxDwg84yEBv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=61%3A10)
 
+Home Page:
+A home Page é o ponto inicial do projeto. Ao entrar no endereço do website, o usuário será direcionado para essa página. Nela contém um banner inicial sobreposto com o botão que dá acesso a página de busca d. Abaixo, terá um texto explicativo sobre a importância da adoção. Em seguida, algumas dicas sobre cuidados com animais e um botão que encaminha o usuário para a página de dicas.
+
+![HomePage](https://github.com/user-attachments/assets/677e68ed-22f5-40ac-ae4b-660a9f54e95d)
 
 
  
