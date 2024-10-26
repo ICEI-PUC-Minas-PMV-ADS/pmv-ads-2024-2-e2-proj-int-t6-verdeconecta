@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|c:\\users\\adm\\documents\\github\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|solutionrelative:verdeconecta\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|c:\\users\\adm\\documents\\github\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|solutionrelative:verdeconecta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|c:\\users\\adm\\documents\\github\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78EA4A8A-E722-45C8-91C8-8533D7ECC2B8}|verdeconecta\\verdeconecta.csproj|solutionrelative:verdeconecta\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,17 +33,53 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "verdeconecta\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "verdeconecta\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T20:44:13.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "verdeconecta\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Models\\Cliente.cs",
+              "RelativeToolTip": "verdeconecta\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T19:50:03.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Program.cs",
               "RelativeDocumentMoniker": "verdeconecta\\Program.cs",
               "ToolTip": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\Program.cs",
               "RelativeToolTip": "verdeconecta\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T19:15:56.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T19:15:56.113Z"
             }
           ]
         }
