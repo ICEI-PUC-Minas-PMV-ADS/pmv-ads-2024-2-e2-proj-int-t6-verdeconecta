@@ -1,0 +1,47 @@
+﻿
+@model verdeconecta.Models.DicasNutricionais
+
+@{
+    ViewData["Title"] = "Adicionar Nova Dica";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Dicas Nutricionais</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dica" class="control-label"></label>
+                <textarea asp-for="Dica" class="form-control"></textarea>
+                <span asp-validation-for="Dica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataDica" class="control-label"></label>
+                <input asp-for="DataDica" class="form-control" type="date" />
+                <span asp-validation-for="DataDica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
