@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using verdeconecta.Models;
 
@@ -11,9 +12,11 @@ using verdeconecta.Models;
 namespace verdeconecta.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241027180248_M03AtualizacaoTabelaRefeicoes")]
+    partial class M03AtualizacaoTabelaRefeicoes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,29 +33,34 @@ namespace verdeconecta.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<float>("Calorias")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Carboidratos")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Fibras")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Gorduras")
-                        .HasColumnType("real");
-
-                    b.Property<int>("Gramas")
+                    b.Property<int?>("AlimentoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float>("Proteinas")
+                    b.Property<float>("calorias")
+                        .HasColumnType("real");
+
+                    b.Property<float>("carboidratos")
+                        .HasColumnType("real");
+
+                    b.Property<float>("fibras")
+                        .HasColumnType("real");
+
+                    b.Property<float>("gorduras")
+                        .HasColumnType("real");
+
+                    b.Property<int>("gramas")
+                        .HasColumnType("int");
+
+                    b.Property<float>("proteinas")
                         .HasColumnType("real");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AlimentoId");
 
                     b.ToTable("Alimento");
                 });
@@ -64,9 +72,6 @@ namespace verdeconecta.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AlimentoId")
-                        .HasColumnType("int");
 
                     b.Property<float>("Calorias")
                         .HasColumnType("real");
@@ -89,14 +94,7 @@ namespace verdeconecta.Migrations
                     b.Property<int>("TipoRefeicao")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("AlimentoId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Refeicao");
                 });
@@ -138,33 +136,16 @@ namespace verdeconecta.Migrations
                     b.ToTable("Usuario");
                 });
 
-            modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
-                {
-                    b.HasOne("verdeconecta.Models.Alimento", "Alimento")
-                        .WithMany("Refeicoes")
-                        .HasForeignKey("AlimentoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("verdeconecta.Models.Usuario", "Usuario")
-                        .WithMany("Refeicoes")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Alimento");
-
-                    b.Navigation("Usuario");
-                });
-
             modelBuilder.Entity("verdeconecta.Models.Alimento", b =>
                 {
-                    b.Navigation("Refeicoes");
+                    b.HasOne("verdeconecta.Models.Refeicao", null)
+                        .WithMany("Alimentos")
+                        .HasForeignKey("AlimentoId");
                 });
 
-            modelBuilder.Entity("verdeconecta.Models.Usuario", b =>
+            modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
                 {
-                    b.Navigation("Refeicoes");
+                    b.Navigation("Alimentos");
                 });
 #pragma warning restore 612, 618
         }

@@ -29,7 +29,8 @@ namespace verdeconecta.Models
         public string Senha { get; set; }
 
         public Perfil Perfil { get; set; }
-        
+        public ICollection<Refeicao> Refeicoes { get; set; }
+
     }
 
     public enum Perfil

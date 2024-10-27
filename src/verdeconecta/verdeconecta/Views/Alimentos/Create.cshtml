@@ -1,0 +1,63 @@
+﻿@model verdeconecta.Models.Alimento
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Alimento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gramas" class="control-label"></label>
+                <input asp-for="Gramas" class="form-control" />
+                <span asp-validation-for="Gramas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fibras" class="control-label"></label>
+                <input asp-for="Fibras" class="form-control" />
+                <span asp-validation-for="Fibras" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Proteinas" class="control-label"></label>
+                <input asp-for="Proteinas" class="form-control" />
+                <span asp-validation-for="Proteinas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carboidratos" class="control-label"></label>
+                <input asp-for="Carboidratos" class="form-control" />
+                <span asp-validation-for="Carboidratos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gorduras" class="control-label"></label>
+                <input asp-for="Gorduras" class="form-control" />
+                <span asp-validation-for="Gorduras" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calorias" class="control-label"></label>
+                <input asp-for="Calorias" class="form-control" />
+                <span asp-validation-for="Calorias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

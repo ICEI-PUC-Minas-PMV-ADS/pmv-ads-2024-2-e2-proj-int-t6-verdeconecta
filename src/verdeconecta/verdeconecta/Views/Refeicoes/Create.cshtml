@@ -1,0 +1,71 @@
+﻿@model verdeconecta.Models.Refeicao
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Refeicao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TipoRefeicao" class="control-label"></label>
+                <select asp-for="TipoRefeicao" class="form-control"></select>
+                <span asp-validation-for="TipoRefeicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fibras" class="control-label"></label>
+                <input asp-for="Fibras" class="form-control" />
+                <span asp-validation-for="Fibras" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Proteinas" class="control-label"></label>
+                <input asp-for="Proteinas" class="form-control" />
+                <span asp-validation-for="Proteinas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Carboidratos" class="control-label"></label>
+                <input asp-for="Carboidratos" class="form-control" />
+                <span asp-validation-for="Carboidratos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gorduras" class="control-label"></label>
+                <input asp-for="Gorduras" class="form-control" />
+                <span asp-validation-for="Gorduras" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Calorias" class="control-label"></label>
+                <input asp-for="Calorias" class="form-control" />
+                <span asp-validation-for="Calorias" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataDaRefeicao" class="control-label"></label>
+                <input asp-for="DataDaRefeicao" class="form-control" />
+                <span asp-validation-for="DataDaRefeicao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlimentoId" class="control-label"></label>
+                <select asp-for="AlimentoId" class ="form-control" asp-items="ViewBag.AlimentoId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
