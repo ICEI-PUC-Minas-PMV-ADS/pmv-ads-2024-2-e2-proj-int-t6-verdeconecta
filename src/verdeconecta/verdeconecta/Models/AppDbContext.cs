@@ -9,5 +9,8 @@ namespace verdeconecta.Models
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Alimento> Alimentos { get; set; }
         public DbSet<Refeicao> Refeicoes { get; set; }
+
+        public DbSet<DicasNutricionais> DicasNutricionais { get; set; }
+
     }
 }
