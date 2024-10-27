@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Refeicoes\**" />
+    <Content Remove="Views\Refeicoes\**" />
+    <EmbeddedResource Remove="Views\Refeicoes\**" />
+    <None Remove="Views\Refeicoes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
@@ -18,6 +25,14 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Refeicoes\Create.cshtml" />
+    <None Include="Views\Refeicoes\Delete.cshtml" />
+    <None Include="Views\Refeicoes\Details.cshtml" />
+    <None Include="Views\Refeicoes\Edit.cshtml" />
+    <None Include="Views\Refeicoes\Index.cshtml" />
   </ItemGroup>
 
 </Project>

@@ -10,11 +10,7 @@ namespace verdeconecta.Models
 
             public int Id { get; set; }         
             public TipoRefeicao TipoRefeicao { get; set; }
-            public float Fibras { get; set; }
-            public float Proteinas { get; set; }
-            public float Carboidratos { get; set; }
-            public float Gorduras { get; set; }
-            public float Calorias { get; set; }
+            
             public DateTime DataDaRefeicao { get; set; }
 
             public int AlimentoId { get; set; }
