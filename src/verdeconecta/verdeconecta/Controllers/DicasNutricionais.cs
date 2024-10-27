@@ -52,11 +52,11 @@ namespace verdeconecta.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(DicaNutricional);
+                _context.Add(DicasNutricionais);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(DicaNutricional);
+            return View(DicasNutricionais);
         }
     }
 }
