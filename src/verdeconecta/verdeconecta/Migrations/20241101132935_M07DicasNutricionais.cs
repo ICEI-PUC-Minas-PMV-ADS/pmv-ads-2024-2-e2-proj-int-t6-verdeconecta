@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace verdeconecta.Migrations
 {
     /// <inheritdoc />
-    public partial class DicasNitricionais : Migration
+    public partial class M07DicasNutricionais : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

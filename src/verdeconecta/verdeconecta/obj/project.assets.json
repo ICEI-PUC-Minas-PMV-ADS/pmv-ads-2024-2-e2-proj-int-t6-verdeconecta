@@ -7865,6 +7865,7 @@
     "net8.0": [
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 8.0.10",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
+      "Microsoft.EntityFrameworkCore.Design >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
@@ -7877,11 +7878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetofacu\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "projectName": "verdeconecta",
-      "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetofacu\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "packagesPath": "C:\\Users\\laris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetofacu\\src\\verdeconecta\\verdeconecta\\obj\\",
+      "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7921,6 +7922,12 @@
             "version": "[8.0.10, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[8.0.10, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.10, )"
           },

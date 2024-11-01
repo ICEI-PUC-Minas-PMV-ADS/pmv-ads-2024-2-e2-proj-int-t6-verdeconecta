@@ -52,11 +52,14 @@ namespace verdeconecta.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(DicasNutricionais);
+                _context.Add(DicaNutricional);  // Use a instância recebida, DicaNutricional, e não o nome da classe DicasNutricionais
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(DicasNutricionais);
+            return View(DicaNutricional); // Retorne DicaNutricional para manter os dados em caso de erro
         }
+
+
+
     }
 }
