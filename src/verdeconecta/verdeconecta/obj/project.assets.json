@@ -7873,19 +7873,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laris\\.nuget\\packages\\": {}
+    "C:\\Users\\ADM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectUniqueName": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "projectName": "verdeconecta",
-      "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
-      "packagesPath": "C:\\Users\\laris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\projetoFinal\\src\\verdeconecta\\verdeconecta\\obj\\",
+      "projectPath": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "packagesPath": "C:\\Users\\ADM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADM\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\laris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
