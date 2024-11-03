@@ -1687,3 +1687,4 @@ C:\Users\laris\OneDrive\Área de Trabalho\projetoFinal\src\verdeconecta\verdecon
 C:\Users\laris\OneDrive\Área de Trabalho\projetoFinal\src\verdeconecta\verdeconecta\obj\Debug\net8.0\verdeconecta.pdb
 C:\Users\laris\OneDrive\Área de Trabalho\projetoFinal\src\verdeconecta\verdeconecta\obj\Debug\net8.0\verdeconecta.genruntimeconfig.cache
 C:\Users\laris\OneDrive\Área de Trabalho\projetoFinal\src\verdeconecta\verdeconecta\obj\Debug\net8.0\ref\verdeconecta.dll
+C:\Users\ADM\Documents\GitHub\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\BCrypt.Net-Next.dll
