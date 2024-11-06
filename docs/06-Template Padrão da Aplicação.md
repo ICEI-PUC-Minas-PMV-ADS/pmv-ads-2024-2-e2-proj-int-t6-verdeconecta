@@ -2,7 +2,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Cores:
+#D7F9D5 verde claro
+#5DA416 verde logo
+#D9D9D9 cinza
+#577E5A verde escuro
+
+iconografia: google fonts
+
+
 
 > **Links Úteis**:
 >
