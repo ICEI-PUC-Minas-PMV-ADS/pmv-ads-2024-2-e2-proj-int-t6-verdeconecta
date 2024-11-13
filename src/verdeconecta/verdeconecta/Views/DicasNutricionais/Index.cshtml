@@ -1,6 +1,4 @@
-﻿
-
-@model IEnumerable<verdeconecta.Models.DicasNutricionais>
+﻿@model IEnumerable<verdeconecta.Models.DicasNutricionais>
 
 @{
     ViewData["Title"] = "Dicas Nutricionais";
@@ -18,6 +16,8 @@
             <th>ID</th>
             <th>Título</th>
             <th>Data da Dica</th>
+            <th>Likes</th>
+            <th>Dislikes</th>
             <th>Ações</th>
         </tr>
     </thead>
@@ -28,8 +28,16 @@
                 <td>@dica.Id</td>
                 <td>@dica.Titulo</td>
                 <td>@dica.DataDica.ToString("dd/MM/yyyy")</td>
+                <td>@dica.Likes</td>
+                <td>@dica.Dislikes</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@dica.Id" class="btn btn-info">Ver Detalhes</a>
+                    <!-- Botões de Like e Dislike -->
+                    <form asp-action="Like" asp-route-id="@dica.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-success">👍 (@dica.Likes)</button>
+                    </form>
+                    <form asp-action="Dislike" asp-route-id="@dica.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">👎 (@dica.Dislikes)</button>
+                    </form>
                 </td>
             </tr>
         }

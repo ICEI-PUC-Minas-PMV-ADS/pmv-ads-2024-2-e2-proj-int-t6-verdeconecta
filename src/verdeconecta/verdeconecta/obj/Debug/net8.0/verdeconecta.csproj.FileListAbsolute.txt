@@ -2252,3 +2252,4 @@ C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t
 C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\obj\Debug\net8.0\verdeconecta.pdb
 C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\obj\Debug\net8.0\verdeconecta.genruntimeconfig.cache
 C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\obj\Debug\net8.0\ref\verdeconecta.dll
+C:\Users\laris\OneDrive\Área de Trabalho\projetoFinal\src\verdeconecta\verdeconecta\bin\Debug\net8.0\BCrypt.Net-Next.dll
