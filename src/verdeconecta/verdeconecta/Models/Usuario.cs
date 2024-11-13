@@ -10,6 +10,7 @@ namespace verdeconecta.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage ="Obrigatório informar o nome!")]
+
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar o E-mail!")]
