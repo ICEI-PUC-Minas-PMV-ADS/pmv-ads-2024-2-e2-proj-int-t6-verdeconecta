@@ -1,4 +1,4 @@
-﻿@model IEnumerable<verdeconecta.Models.DicasNutricionais>
+@model IEnumerable<verdeconecta.Models.DicasNutricionais>
 
 @{
     ViewData["Title"] = "Dicas Nutricionais";
@@ -19,6 +19,8 @@
             <th>Likes</th>
             <th>Dislikes</th>
             <th>Ações</th>
+            <th>Detalhes</th>
+
         </tr>
     </thead>
     <tbody>
@@ -39,6 +41,10 @@
                         <button type="submit" class="btn btn-danger">👎 (@dica.Dislikes)</button>
                     </form>
                 </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@dica.Id" class="btn btn-info">Ver Detalhes</a>
+                </td>
+
             </tr>
         }
     </tbody>
