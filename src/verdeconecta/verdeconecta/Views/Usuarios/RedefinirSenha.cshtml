@@ -1,0 +1,47 @@
+﻿@model verdeconecta.Models.Usuario
+
+@{
+    ViewData["Title"] = "Redefinir Senha";
+}
+
+<h1>Redefinir Senha</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (ViewBag.Mensagem != null)
+        {
+            <div class="alert alert-info">
+                @ViewBag.Mensagem
+            </div>
+        }
+
+        <form asp-action="RedefinirSenha" method="post">
+            <!-- Campo para a senha antiga -->
+            <div class="form-group">
+                <label for="senhaAntiga">Senha Antiga</label>
+                <input type="password" name="senhaAntiga" class="form-control" placeholder="Digite sua senha antiga" required />
+            </div>
+
+            <!-- Campo para a nova senha -->
+            <div class="form-group">
+                <label for="novaSenha">Nova Senha</label>
+                <input type="password" name="novaSenha" class="form-control" placeholder="Digite sua nova senha" required minlength="8" />
+                <small class="form-text text-muted">A senha deve ter no mínimo 8 caracteres.</small>
+            </div>
+
+            <!-- Confirmar nova senha -->
+            <div class="form-group">
+                <label for="confirmarNovaSenha">Confirmar Nova Senha</label>
+                <input type="password" name="confirmarNovaSenha" class="form-control" placeholder="Confirme sua nova senha" required />
+                <small class="form-text text-muted">Digite novamente a nova senha.</small>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Redefinir Senha" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

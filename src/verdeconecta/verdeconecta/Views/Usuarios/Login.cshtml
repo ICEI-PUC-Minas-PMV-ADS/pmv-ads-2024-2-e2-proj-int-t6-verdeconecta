@@ -23,11 +23,15 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Acessar" class="btn btn-success" />
+                <input type="submit" value="Acessar" class="btn btn-success" /> |
+                <a class="btn btn-info" asp-action="RedefinirSenha">Redefinir minha senha</a>
             </div>
         </form>
         <h3>@ViewBag.Message</h3>
     </div>
+</div>
+<div>
+    <a asp-action="EsqueciSenha">Esqueci minha Senha</a>
 </div>
 
 

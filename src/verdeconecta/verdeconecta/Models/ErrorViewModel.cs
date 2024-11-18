@@ -1,3 +1,4 @@
+#nullable enable
 namespace verdeconecta.Models
 {
     public class ErrorViewModel

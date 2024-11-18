@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -15,11 +17,23 @@ namespace verdeconecta.Controllers
 {
     public class UsuariosController : Controller
     {
-        private readonly AppDbContext _context;
+    private readonly AppDbContext _context;
+    private readonly string _remetente;
+    private readonly string _emailRemetente;
+    private readonly string _senhaEmail;
+    private readonly string _servidorSmtp;
+    private readonly int _portaSmtp;
+    
 
         public UsuariosController(AppDbContext context)
         {
             _context = context;
+
+            _remetente = "Suporte Verde Conecta";
+            _emailRemetente = "verdeconecta@hotmail.com";
+            _senhaEmail = "xxxxxxxxx";
+            _servidorSmtp = "smtp-mail.outlook.com";
+            _portaSmtp = 587;
         }
 
         // GET: Usuarios
@@ -33,11 +47,34 @@ namespace verdeconecta.Controllers
             return View();
         }
 
+
+        private async Task SendEmailAsync(string toEmail, string subject, string body)
+        {
+            using (var client = new SmtpClient(_servidorSmtp, _portaSmtp))
+            {
+                client.UseDefaultCredentials = false;
+                client.Credentials = new NetworkCredential(_emailRemetente, _senhaEmail);
+                client.EnableSsl = true;
+
+                var message = new MailMessage
+                {
+                    From = new MailAddress(_emailRemetente, _remetente),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true
+                };
+
+                message.To.Add(toEmail);
+                await client.SendMailAsync(message);
+            }
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> Login(Usuario usuario)
         {
             var dados = await _context.Usuarios
-               // .FindAsync(usuario.Email);
+              
                .FirstOrDefaultAsync(u => u.Email == usuario.Email);
 
             if (dados == null)
@@ -217,5 +254,102 @@ namespace verdeconecta.Controllers
         {
             return _context.Usuarios.Any(e => e.Id == id);
         }
+
+
+        [HttpGet]
+        
+        public IActionResult EsqueciSenha()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        
+        public async Task<IActionResult> EsqueciSenha(string email)
+        {
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+            if (usuario == null)
+            {
+                ViewBag.Message = "E-mail não encontrado.";
+                return View();
+            }
+
+         
+            usuario.TokenRedefinicaoSenha = Guid.NewGuid().ToString();
+            usuario.TokenValidade = DateTime.UtcNow.AddHours(1);
+
+         
+            _context.Update(usuario);
+            await _context.SaveChangesAsync();
+
+          
+            string callbackUrl = Url.Action("RedefinirSenha", "Usuarios", new { token = usuario.TokenRedefinicaoSenha }, Request.Scheme);
+            string emailBody = $@"
+              <h3>Redefinição de Senha</h3>
+              <p>Clique no link abaixo para redefinir sua senha:</p>
+              <a href='{callbackUrl}'>Redefinir Senha</a>";
+
+            await SendEmailAsync(usuario.Email, "Redefinição de Senha", emailBody);
+
+          
+            ViewBag.Message = "Um link para redefinir sua senha foi enviado para o seu e-mail.";
+            return View("ConfirmacaoEsqueciSenha");
+        }
+
+
+        [HttpGet]
+        public IActionResult RedefinirSenha()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RedefinirSenha(string senhaAntiga, string novaSenha, string confirmarNovaSenha)
+        {
+           
+            var usuarioId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id.ToString() == usuarioId);
+
+            if (usuario == null)
+            {
+                ViewBag.Mensagem = "favor fazer login para redefinir a senha.";
+                return View();
+            }
+
+           
+            if (!BCrypt.Net.BCrypt.Verify(senhaAntiga, usuario.Senha))
+            {
+                ViewBag.Mensagem = "A senha antiga está incorreta.";
+                return View();
+            }
+
+           
+            if (novaSenha != confirmarNovaSenha)
+            {
+                ViewBag.Mensagem = "As novas senhas não coincidem.";
+                return View();
+            }
+
+           
+            if (novaSenha.Length < 8)
+            {
+                ViewBag.Mensagem = "A nova senha deve ter no mínimo 8 caracteres.";
+                return View();
+            }
+
+           
+            usuario.Senha = BCrypt.Net.BCrypt.HashPassword(novaSenha);
+
+         
+            _context.Update(usuario);
+            await _context.SaveChangesAsync();
+
+            
+            ViewBag.Mensagem = "Senha redefinida com sucesso!";
+            return View();
+        }
     }
 }
+
+
+

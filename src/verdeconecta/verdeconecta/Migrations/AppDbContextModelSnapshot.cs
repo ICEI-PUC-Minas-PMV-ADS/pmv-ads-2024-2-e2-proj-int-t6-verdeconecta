@@ -142,6 +142,12 @@ namespace verdeconecta.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("TokenRedefinicaoSenha")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TokenValidade")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Usuario");

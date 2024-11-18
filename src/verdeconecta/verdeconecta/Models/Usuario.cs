@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace verdeconecta.Models
@@ -31,6 +32,11 @@ namespace verdeconecta.Models
 
         public Perfil Perfil { get; set; }
         public ICollection<Refeicao> Refeicoes { get; set; }
+
+        #nullable enable
+        public string? TokenRedefinicaoSenha { get; set; }
+        public DateTime? TokenValidade { get; set; }
+        
 
     }
 
