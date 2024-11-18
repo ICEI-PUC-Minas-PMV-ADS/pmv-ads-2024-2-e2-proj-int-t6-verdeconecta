@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using verdeconecta.Models;
 
@@ -11,9 +12,11 @@ using verdeconecta.Models;
 namespace verdeconecta.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241113191154_AdicionarLikesDislikes")]
+    partial class AdicionarLikesDislikes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -147,12 +150,6 @@ namespace verdeconecta.Migrations
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TokenRedefinicaoSenha")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("TokenValidade")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

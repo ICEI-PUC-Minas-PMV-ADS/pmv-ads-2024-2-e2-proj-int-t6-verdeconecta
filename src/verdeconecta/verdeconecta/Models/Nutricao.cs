@@ -17,6 +17,9 @@ namespace verdeconecta.Models
 
         [Required(ErrorMessage = "Obrigatório informar o Data de postagem da dica!")]
         public DateTime DataDica { get; set; }
+
+        public int Likes { get; set; } = 0;
+        public int Dislikes { get; set; } = 0;
     }
 
 }
