@@ -31,7 +31,7 @@ namespace verdeconecta.Controllers
 
             _remetente = "Suporte Verde Conecta";
             _emailRemetente = "verdeconecta@hotmail.com";
-            _senhaEmail = "xxxxxxxxx";
+            _senhaEmail = "xxxxxxxxxxx";
             _servidorSmtp = "smtp-mail.outlook.com";
             _portaSmtp = 587;
         }
