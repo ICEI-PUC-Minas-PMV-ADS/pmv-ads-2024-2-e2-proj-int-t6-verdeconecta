@@ -12,8 +12,8 @@ using verdeconecta.Models;
 namespace verdeconecta.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241120233212_CriacaoMetas")]
-    partial class CriacaoMetas
+    [Migration("20241121131110_M09CorrigirMetas")]
+    partial class M09CorrigirMetas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,6 +90,49 @@ namespace verdeconecta.Migrations
                     b.ToTable("DicasNutricionais");
                 });
 
+            modelBuilder.Entity("verdeconecta.Models.Meta", b =>
+                {
+                    b.Property<int>("IDMe")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDMe"));
+
+                    b.Property<DateTime>("DaraCriacao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("MetaFibras")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("duracaoDaMeta")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("idUsuario")
+                        .HasColumnType("int");
+
+                    b.Property<float>("metaCalorica")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaCarboidratos")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaGorduraTotais")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaProteinas")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaSodio")
+                        .HasColumnType("real");
+
+                    b.HasKey("IDMe");
+
+                    b.HasIndex("idUsuario");
+
+                    b.ToTable("Meta");
+                });
+
             modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
                 {
                     b.Property<int>("Id")
@@ -162,6 +205,17 @@ namespace verdeconecta.Migrations
                     b.ToTable("Usuario");
                 });
 
+            modelBuilder.Entity("verdeconecta.Models.Meta", b =>
+                {
+                    b.HasOne("verdeconecta.Models.Usuario", "Usuario")
+                        .WithMany("Metas")
+                        .HasForeignKey("idUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
             modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
                 {
                     b.HasOne("verdeconecta.Models.Alimento", "Alimento")
@@ -188,6 +242,8 @@ namespace verdeconecta.Migrations
 
             modelBuilder.Entity("verdeconecta.Models.Usuario", b =>
                 {
+                    b.Navigation("Metas");
+
                     b.Navigation("Refeicoes");
                 });
 #pragma warning restore 612, 618

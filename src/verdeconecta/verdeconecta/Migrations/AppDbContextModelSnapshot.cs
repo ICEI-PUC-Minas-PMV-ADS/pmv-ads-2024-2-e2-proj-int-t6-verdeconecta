@@ -99,9 +99,6 @@ namespace verdeconecta.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdNutricionista")
-                        .HasColumnType("int");
-
                     b.Property<float>("MetaFibras")
                         .HasColumnType("real");
 
@@ -128,11 +125,9 @@ namespace verdeconecta.Migrations
 
                     b.HasKey("IDMe");
 
-                    b.HasIndex("IdNutricionista");
-
                     b.HasIndex("idUsuario");
 
-                    b.ToTable("Metas");
+                    b.ToTable("Meta");
                 });
 
             modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
@@ -209,19 +204,11 @@ namespace verdeconecta.Migrations
 
             modelBuilder.Entity("verdeconecta.Models.Meta", b =>
                 {
-                    b.HasOne("verdeconecta.Models.Usuario", "Nutricionista")
-                        .WithMany()
-                        .HasForeignKey("IdNutricionista")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("verdeconecta.Models.Usuario", "Usuario")
-                        .WithMany()
+                        .WithMany("Metas")
                         .HasForeignKey("idUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Nutricionista");
 
                     b.Navigation("Usuario");
                 });
@@ -252,6 +239,8 @@ namespace verdeconecta.Migrations
 
             modelBuilder.Entity("verdeconecta.Models.Usuario", b =>
                 {
+                    b.Navigation("Metas");
+
                     b.Navigation("Refeicoes");
                 });
 #pragma warning restore 612, 618

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<verdeconecta.Models.Meta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Metas</h1>
+
+<p>
+    <a asp-action="Create">Criar nova meta</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DaraCriacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.duracaoDaMeta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metaCalorica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetaFibras)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metaProteinas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metaCarboidratos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metaSodio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.metaGorduraTotais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DaraCriacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duracaoDaMeta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metaCalorica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetaFibras)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metaProteinas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metaCarboidratos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metaSodio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.metaGorduraTotais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Email)
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.IDMe">Editar</a> |
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.IDMe">Detalhes</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.IDMe">Excluir</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

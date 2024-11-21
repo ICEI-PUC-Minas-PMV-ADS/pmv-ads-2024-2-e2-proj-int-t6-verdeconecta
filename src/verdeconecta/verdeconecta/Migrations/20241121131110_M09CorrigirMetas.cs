@@ -6,13 +6,14 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace verdeconecta.Migrations
 {
     /// <inheritdoc />
-    public partial class CriacaoMetasCorrecao : Migration
+    public partial class M09CorrigirMetas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.CreateTable(
-                name: "Metas",
+                name: "Meta",
                 columns: table => new
                 {
                     IDMe = table.Column<int>(type: "int", nullable: false)
@@ -25,20 +26,13 @@ namespace verdeconecta.Migrations
                     metaCarboidratos = table.Column<float>(type: "real", nullable: false),
                     metaSodio = table.Column<float>(type: "real", nullable: false),
                     metaGorduraTotais = table.Column<float>(type: "real", nullable: false),
-                    idUsuario = table.Column<int>(type: "int", nullable: false),
-                    IdNutricionista = table.Column<int>(type: "int", nullable: false),
-                    idNutricionista = table.Column<int>(type: "int", nullable: true)
+                    idUsuario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Metas", x => x.IDMe);
+                    table.PrimaryKey("PK_Meta", x => x.IDMe);
                     table.ForeignKey(
-                        name: "FK_Metas_Usuario_idNutricionista",
-                        column: x => x.idNutricionista,
-                        principalTable: "Usuario",
-                        principalColumn: "Id");
-                    table.ForeignKey(
-                        name: "FK_Metas_Usuario_idUsuario",
+                        name: "FK_Meta_Usuario_idUsuario",
                         column: x => x.idUsuario,
                         principalTable: "Usuario",
                         principalColumn: "Id",
@@ -46,13 +40,8 @@ namespace verdeconecta.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Metas_idNutricionista",
-                table: "Metas",
-                column: "idNutricionista");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Metas_idUsuario",
-                table: "Metas",
+                name: "IX_Meta_idUsuario",
+                table: "Meta",
                 column: "idUsuario");
         }
 
@@ -60,7 +49,8 @@ namespace verdeconecta.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Metas");
+                name: "Meta");
+
         }
     }
 }

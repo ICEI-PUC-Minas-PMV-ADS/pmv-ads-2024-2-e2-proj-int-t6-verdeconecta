@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace verdeconecta.Models
 {
 
-    [Table("Metas")]
+    [Table("Meta")]
     public class Meta
     {
         [Key]
@@ -41,21 +41,12 @@ namespace verdeconecta.Models
         [Display(Name = "Meta de Gordura totais")]
         [Required(ErrorMessage = "Obrigatorio informar a meta de gordura!")]
         public float metaGorduraTotais { get; set; }
-        
 
-        [Display(Name = "Usuario")]
-        [Required(ErrorMessage = "Obrigatório informar o usuario!")]
+        [Display(Name = "Paciente")]
+        [Required(ErrorMessage = "Obrigatorio informar o Paciente!")]
         public int idUsuario { get; set; }
         [ForeignKey(nameof(idUsuario))]
         public  Usuario Usuario { get; set; }
-
-
-        [Display(Name = "Nutricionista")]
-        [Required(ErrorMessage ="Obrigatorio informar o nutricionista!")]
-        public int IdNutricionista { get; set; }
-
-        [ForeignKey(nameof(IdNutricionista))]
-        public  Usuario Nutricionista { get; set; }
 
             
     }
