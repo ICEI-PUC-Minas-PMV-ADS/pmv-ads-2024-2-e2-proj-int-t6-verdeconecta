@@ -8021,13 +8021,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Felipe\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

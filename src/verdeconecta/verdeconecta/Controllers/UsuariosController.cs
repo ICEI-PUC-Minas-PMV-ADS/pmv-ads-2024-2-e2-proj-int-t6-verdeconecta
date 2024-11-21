@@ -30,9 +30,9 @@ namespace verdeconecta.Controllers
             _context = context;
 
             _remetente = "Suporte Verde Conecta";
-            _emailRemetente = "verdeconecta@hotmail.com";
-            _senhaEmail = "xxxxxxxxxxx";
-            _servidorSmtp = "smtp-mail.outlook.com";
+            _emailRemetente = "verdeconectapuc@gmail.com";
+            _senhaEmail = "syrz ghfj rzce qkfo";
+            _servidorSmtp = "smtp.gmail.com";
             _portaSmtp = 587;
         }
 

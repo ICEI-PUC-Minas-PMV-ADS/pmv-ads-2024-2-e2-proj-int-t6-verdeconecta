@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("verdeconecta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9117e5d5fc63c3c49ab60aed8df062d97cbb245")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e0e945950f52e55c7dd91a167bb4d967f0ef5cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("verdeconecta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("verdeconecta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
