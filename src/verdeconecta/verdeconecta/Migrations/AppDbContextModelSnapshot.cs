@@ -87,6 +87,54 @@ namespace verdeconecta.Migrations
                     b.ToTable("DicasNutricionais");
                 });
 
+            modelBuilder.Entity("verdeconecta.Models.Meta", b =>
+                {
+                    b.Property<int>("IDMe")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IDMe"));
+
+                    b.Property<DateTime>("DaraCriacao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IdNutricionista")
+                        .HasColumnType("int");
+
+                    b.Property<float>("MetaFibras")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("duracaoDaMeta")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("idUsuario")
+                        .HasColumnType("int");
+
+                    b.Property<float>("metaCalorica")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaCarboidratos")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaGorduraTotais")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaProteinas")
+                        .HasColumnType("real");
+
+                    b.Property<float>("metaSodio")
+                        .HasColumnType("real");
+
+                    b.HasKey("IDMe");
+
+                    b.HasIndex("IdNutricionista");
+
+                    b.HasIndex("idUsuario");
+
+                    b.ToTable("Metas");
+                });
+
             modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
                 {
                     b.Property<int>("Id")
@@ -157,6 +205,25 @@ namespace verdeconecta.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("verdeconecta.Models.Meta", b =>
+                {
+                    b.HasOne("verdeconecta.Models.Usuario", "Nutricionista")
+                        .WithMany()
+                        .HasForeignKey("IdNutricionista")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("verdeconecta.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("idUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Nutricionista");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("verdeconecta.Models.Refeicao", b =>
