@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using verdeconecta.Models;
 
 namespace verdeconecta.Controllers
 {
-    public class DicasNutricionaisController : Controller
+        public class DicasNutricionaisController : Controller
     {
         private readonly AppDbContext _context;
 

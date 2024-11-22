@@ -12,9 +12,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using verdeconecta.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace verdeconecta.Controllers
 {
+    [Authorize]
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -42,16 +44,20 @@ namespace verdeconecta.Controllers
             return View(await _context.Usuarios.ToListAsync());
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
-
-    
-
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(Usuario usuario)
         {
             var dados = await _context.Usuarios
