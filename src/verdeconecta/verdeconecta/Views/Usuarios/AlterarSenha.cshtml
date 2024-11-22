@@ -1,0 +1,27 @@
+﻿@model verdeconecta.Models.Usuario
+
+
+@{
+    ViewData["Title"] = "Esqueci Minha Senha";
+}
+
+<h1>Esqueci Minha Senha</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        @if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+            <div class="alert alert-info">
+                @ViewBag.Message
+            </div>
+        }
+
+        <form asp-action="EsqueciSenha" method="post">
+            <div class="form-group">
+                <label for="email">Digite seu e-mail</label>
+                <input type="email" name="email" class="form-control" placeholder="Seu e-mail cadastrado" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Link de Redefinição</button>
+        </form>
+    </div>
+</div>

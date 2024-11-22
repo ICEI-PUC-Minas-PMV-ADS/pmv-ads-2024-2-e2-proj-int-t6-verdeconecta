@@ -3387,3 +3387,9 @@ C:\Users\ti05\Source\Repos\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdec
 C:\Users\ti05\Source\Repos\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\obj\Debug\net8.0\verdeconecta.genruntimeconfig.cache
 C:\Users\ti05\Source\Repos\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\obj\Debug\net8.0\ref\verdeconecta.dll
 C:\Users\ti05\Source\Repos\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Felipe\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\bin\Debug\net8.0\System.ClientModel.dll
