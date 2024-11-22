@@ -35,9 +35,7 @@ namespace verdeconecta.Models
         public ICollection<Meta> Metas { get; set; }
 #nullable enable
         public string? TokenRedefinicaoSenha { get; set; }
-        public DateTime? TokenValidade { get; set; }
-
-        
+        public DateTime? TokenValidade { get; set; }   
         
 
     }
