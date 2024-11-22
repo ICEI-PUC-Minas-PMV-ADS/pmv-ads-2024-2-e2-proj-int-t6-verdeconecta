@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace verdeconecta.Controllers
 {
-    [Authorize]
+    
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -242,14 +242,15 @@ namespace verdeconecta.Controllers
             return _context.Usuarios.Any(e => e.Id == id);
         }
 
- 
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult EsqueciSenha()
         {
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> EsqueciSenha(string email)
         {
