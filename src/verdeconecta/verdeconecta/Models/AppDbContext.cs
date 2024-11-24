@@ -33,5 +33,6 @@ namespace verdeconecta.Models
                 .HasForeignKey(r => r.IdCliente)
                 .OnDelete(DeleteBehavior.Restrict);
         }
+       public DbSet<Questionario> Questionarios { get; set; }
     }
 }

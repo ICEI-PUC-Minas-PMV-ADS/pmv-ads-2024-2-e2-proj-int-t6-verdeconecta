@@ -1,0 +1,60 @@
+﻿@model verdeconecta.Models.Questionario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Questionário</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TipoDieta" class="control-label"></label>
+                <select asp-for="TipoDieta" class="form-control" asp-items="Html.GetEnumSelectList<TipoDieta> ()"></select>
+                <span asp-validation-for="TipoDieta" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="RestricaoDetalhes" class="control-label">Tem alguma restrição alimentar?Se sim, detalhe.</label>
+                <input asp-for="RestricaoDetalhes" class="form-control" />
+                <span asp-validation-for="RestricaoDetalhes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NivelAtividadeFisica" class="control-label"></label>
+                <select asp-for="NivelAtividadeFisica" class="form-control" asp-items="Html.GetEnumSelectList<NivelAtividadeFisica>()"></select>
+                <span asp-validation-for="NivelAtividadeFisica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ObjetivoPrincipal" class="control-label"></label>
+                <select asp-for="ObjetivoPrincipal" class="form-control" asp-items="Html.GetEnumSelectList<ObjetivoPrincipal>()"></select>
+                <span asp-validation-for="ObjetivoPrincipal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RefeicoesPorDia" class="control-label"></label>
+                <input asp-for="RefeicoesPorDia" class="form-control" />
+                <span asp-validation-for="RefeicoesPorDia" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="ConsumoFrutasVegetais" class="control-label"></label>
+                <select asp-for="ConsumoFrutasVegetais" class="form-control" asp-items="Html.GetEnumSelectList<ConsumoFrutasVegetais>()"></select>
+                <span asp-validation-for="ConsumoFrutasVegetais" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

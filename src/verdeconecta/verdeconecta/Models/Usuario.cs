@@ -31,6 +31,7 @@ namespace verdeconecta.Models
         public string Senha { get; set; }
 
         public Perfil Perfil { get; set; }
+        public Questionario Questionario { get; set; }
         public ICollection<Refeicao> Refeicoes { get; set; }
         public ICollection<Meta> Metas { get; set; }
 #nullable enable
