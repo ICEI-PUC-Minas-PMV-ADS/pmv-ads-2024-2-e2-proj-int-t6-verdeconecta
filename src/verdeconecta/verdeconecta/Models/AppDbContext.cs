@@ -13,5 +13,25 @@ namespace verdeconecta.Models
 
         public DbSet<DicasNutricionais> DicasNutricionais { get; set; }
 
+        public DbSet<RelacionamentoNutricionistaCliente> RelacionamentoNutricionistaCliente { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // RelacionamentoNutricionistaCliente
+            modelBuilder.Entity<RelacionamentoNutricionistaCliente>()
+                .HasKey(r => new { r.IdNutricionista, r.IdCliente });
+
+            modelBuilder.Entity<RelacionamentoNutricionistaCliente>()
+                .HasOne(r => r.Nutricionista)
+                .WithMany()
+                .HasForeignKey(r => r.IdNutricionista)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<RelacionamentoNutricionistaCliente>()
+                .HasOne(r => r.Cliente)
+                .WithMany()
+                .HasForeignKey(r => r.IdCliente)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
     }
 }

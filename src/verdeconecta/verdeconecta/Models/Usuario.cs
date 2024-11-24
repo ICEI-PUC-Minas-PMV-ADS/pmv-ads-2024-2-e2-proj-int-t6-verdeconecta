@@ -36,8 +36,6 @@ namespace verdeconecta.Models
 #nullable enable
         public string? TokenRedefinicaoSenha { get; set; }
         public DateTime? TokenValidade { get; set; }   
-        
-
     }
 
     public enum Perfil
