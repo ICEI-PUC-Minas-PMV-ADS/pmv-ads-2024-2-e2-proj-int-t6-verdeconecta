@@ -8,9 +8,19 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
 |------|-----------------------------------------|----|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência|  |  |
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
+|RF-001| Gerenciar cadastro de usuário| Crud Completo | Letícia Moreira Pinto  |
+|RF-002| Login de usuários	     | Realizado login e com senha criptografada | Felipe Soares Kutschera |
+|RF-003|Redefinição de senha| Sistema de redefinição realizado com envio de email  | Felipe Soares Kutschera  |
+|RF-004|Registro de refeições| CRUD Completo   | Daianne Paula Moreira Pinto  |
+|RF-005|Cálculo de nutrientes|Em processo  | Nicolas Gabriel  |
+|RF-006|Gerar relatórios de consumo|  CRUD Completo  | Junio Flausino Rocha  |
+|RF-007|Dicas nutricionais	|  CRUD Completo  | Larissa Moreira Tribst  |
+|RF-008|Permitir o usuário criar metas e acompanhar o progresso|  CRUD Completo  | Nicolas Gabriel  |
+|RF-009|Perfil do usuário com informações importantes como alergias.|  CRUD Completo  | Letícia Moreira Pinto  |
+|RF-010|Permitir a criação de notas em cada relatório|  Em Processo  | Junio Flausino Rocha  |
+|RF-011|Avaliar dicas nutricionais	|  Sistema de avaliação realizado  | Larissa Moreira Tribst  |
+
+
 
 
 # Instruções de acesso
