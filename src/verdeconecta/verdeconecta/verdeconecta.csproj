@@ -42,6 +42,7 @@
     <None Include="Views\Refeicoes\Details.cshtml" />
     <None Include="Views\Refeicoes\Edit.cshtml" />
     <None Include="Views\Refeicoes\Index.cshtml" />
+    <None Include="Views\Refeicoes\RelatorioRefeicao.cshtml" />
     <None Include="wwwroot\Images\VerdeConecta.jfif" />
   </ItemGroup>
 
