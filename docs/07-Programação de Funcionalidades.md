@@ -20,6 +20,12 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |RF-010|Permitir a criação de notas em cada relatório|  Em Processo  | Junio Flausino Rocha  |
 |RF-011|Avaliar dicas nutricionais	|  Sistema de avaliação realizado  | Larissa Moreira Tribst  |
 
+|ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
+|------|-----------------------------------------|----|----|
+|RNF-001| Compatível com diversos navegadores| Realizado | Todos  |
+|RNF-001| O site deve possuir interface intuitiva| Realizado | Todos  |
+
+
 
 
 
