@@ -31,7 +31,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-04 –  Registro de refeições** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-04– Registro de refeições. |
-|Registro de evidência |  |
+|Registro de evidência |![Screenshot_1](https://github.com/user-attachments/assets/c8efa377-867e-4262-a7f5-aef82c64602d)
+  |
 
 | **Caso de Teste** 	| **CT-05 –  Cálculo de nutrientes** 	|
 |:---:	|:---:	|
@@ -59,7 +60,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |	Requisito Associado 	|RF-09– Perfil do usuário com informações importantes como alergias. |
 |Registro de evidência |  |
 
-| **Caso de Teste** 	| **CT-10 – Permitir a criação de notas em cada relatório** 	|
+| **Caso de Teste** 	| **CT-10 Permitir a criação de notas em cada relatório** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-10– Permitir a criação de notas em cada relatório |
 |Registro de evidência |  |
@@ -67,7 +68,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-11 – Avaliar dicas nutricionais** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-11– Avaliar dicas nutricionais. |
-|Registro de evidência |  |
+|Registro de evidência |![Screenshot_1](https://github.com/user-attachments/assets/b50a249e-56ba-4fb4-b353-8ecfe355277d)  |
 
 
 
