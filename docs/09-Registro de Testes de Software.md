@@ -4,47 +4,72 @@
 
 Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
 
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
 
 
-| **Caso de Teste** 	| **CT-03 – Login Usuario** 	|
+
+| **Caso de Teste** 	| **CT-01 – Verificar a funcionalidade do gerenciamento do cadastro de usuários.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve consultar os dados do cliente e permitir o login. |
+|	Requisito Associado 	| RF-01 – O sistema deve permitir que seus usuários gerenciem seus cadastros. |
 |Registro de evidência |  |
 
-![WhatsApp Image 2024-11-24 at 20 32 55](https://github.com/user-attachments/assets/25c2c840-1431-4b97-b7ff-74183e159c2a)
- |
-
- | **Caso de Teste** 	| **CT-03 – Login Usuario** 	|
+ | **Caso de Teste** 	| **CT-02 – Login de usuários** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação bloqueou o acesso do usuario com os dados incorretos. |
-|Registro de evidência |  |
+|	Requisito Associado 	| RF-02 O sistema deve verificar se o e-mail e senha estão cadastrados. |
+|Registro de evidência |  
 
 ![WhatsApp Image 2024-11-24 at 20 31 58](https://github.com/user-attachments/assets/da2e27d7-c908-4df1-921d-8d9281352f68)
+![WhatsApp Image 2024-11-24 at 20 34 13](https://github.com/user-attachments/assets/6b466560-06b8-4ea9-a73a-c0c58637dede)
 
- | **Caso de Teste** 	| **CT-03 – Login Usuario** 	|
+ | **Caso de Teste** 	| **CT-03 – Redefinição de senha** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação consultou o e-mail cadastrado do usuario e enviou um e-mail para o usuario alterar sua senha. |
+|	Requisito Associado 	|RF-03– Redefinição de senha. |
 |Registro de evidência |  |
 
 ![WhatsApp Image 2024-11-24 at 20 33 33](https://github.com/user-attachments/assets/0193a068-4a0d-4f2e-b199-f9a2f19d85f8)
-
-| **Caso de Teste** 	| **CT-03 – Login Usuario** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - Ao tentar redefinir a senha com um e-mail nao cadastrado a aplicaçao reportou que o e-mail nao esatava cadastrado. |
-|Registro de evidência |  |
-
-![WhatsApp Image 2024-11-24 at 20 34 13](https://github.com/user-attachments/assets/6b466560-06b8-4ea9-a73a-c0c58637dede)
-
-| **Caso de Teste** 	| **CT-03 – Login Usuario** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - o usuario recebeu perfeitamente um e-mail para poder redefinir ou recuperar sua senha. |
-|Registro de evidência |  |
-
 ![WhatsApp Image 2024-11-24 at 20 36 44](https://github.com/user-attachments/assets/07fe02de-19cd-464f-ae7d-21a509e1f2cb)
+
+| **Caso de Teste** 	| **CT-04 –  Registro de refeições** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-04– Registro de refeições. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-05 –  Cálculo de nutrientes** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-05– Cálculo de nutrientes. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-06 – Gerar relatórios de consumo** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-06– Gerar relatórios de consumo. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-07 – Dicas nutricionais** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-07– Dicas nutricionais. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-08 – Permitir o usuário criar metas e acompanhar o progresso** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-08– Permitir o usuário criar metas e acompanhar o progresso |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-09 – Perfil do usuário com informações importantes como alergias** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-09– Perfil do usuário com informações importantes como alergias. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-10 – Permitir a criação de notas em cada relatório** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-10– Permitir a criação de notas em cada relatório |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-11 – Avaliar dicas nutricionais** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	|RF-11– Avaliar dicas nutricionais. |
+|Registro de evidência |  |
+
+
+
 
 
 
