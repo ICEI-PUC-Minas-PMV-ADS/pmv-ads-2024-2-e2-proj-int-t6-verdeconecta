@@ -52,6 +52,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	|RF-08– Permitir o usuário criar metas e acompanhar o progresso |
 |Registro de evidência |  |
+![caso de teste metas](https://github.com/user-attachments/assets/96a8c22a-df1b-4208-b75d-10467528459b)
 
 | **Caso de Teste** 	| **CT-09 – Perfil do usuário com informações importantes como alergias** 	|
 |:---:	|:---:	|
