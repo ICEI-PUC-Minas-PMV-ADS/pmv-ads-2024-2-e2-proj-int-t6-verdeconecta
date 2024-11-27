@@ -2,7 +2,9 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
 
-Cores:
+##Cores:
+![AdobeColor-Verde Conecta](https://github.com/user-attachments/assets/a500b00a-8183-48a7-a999-d99323a9504d)
+
 #D7F9D5 verde claro
 #5DA416 verde logo
 #D9D9D9 cinza
