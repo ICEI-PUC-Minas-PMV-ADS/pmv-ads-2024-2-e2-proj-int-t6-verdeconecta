@@ -55,7 +55,7 @@ namespace verdeconecta.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Gramas,Fibras,Proteinas,Carboidratos,Gorduras,Calorias")] Alimento alimento)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Fibras,Proteinas,Carboidratos,Gorduras,Calorias")] Alimento alimento)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace verdeconecta.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Gramas,Fibras,Proteinas,Carboidratos,Gorduras,Calorias")] Alimento alimento)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Fibras,Proteinas,Carboidratos,Gorduras,Calorias")] Alimento alimento)
         {
             if (id != alimento.Id)
             {

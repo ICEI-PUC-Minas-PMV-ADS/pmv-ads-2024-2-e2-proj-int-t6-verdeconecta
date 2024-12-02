@@ -19,6 +19,9 @@
                 @Html.DisplayNameFor(model => model.DataDaRefeicao)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Alimento)
             </th>
             <th>
@@ -35,6 +38,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DataDaRefeicao)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Alimento.Nome)

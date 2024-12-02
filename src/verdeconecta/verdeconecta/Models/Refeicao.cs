@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using NuGet.Versioning;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace verdeconecta.Models
@@ -12,6 +13,8 @@ namespace verdeconecta.Models
             public TipoRefeicao TipoRefeicao { get; set; }
             
             public DateTime DataDaRefeicao { get; set; }
+
+            public float Quantidade { get; set; }
 
             public int AlimentoId { get; set; }
 
