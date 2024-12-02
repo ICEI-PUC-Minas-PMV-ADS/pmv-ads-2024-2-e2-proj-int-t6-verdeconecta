@@ -1,0 +1,33 @@
+:root {
+    --green: green;
+    --white: #ffffff;    
+}
+
+nav {
+    font-size: 14px;
+    background-color: var(--green);
+}
+
+nav-link{
+    font-size: 14px;
+    color: var(--white);
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

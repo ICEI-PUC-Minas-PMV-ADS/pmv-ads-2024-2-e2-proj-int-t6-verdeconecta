@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUl6meUsuTEqCEJf+oFfe9wAAAAACAAAAAAAQZgAAAAEAACAAAABD7cqqp+sIKS+fZ79pNgW3nwsxy9s4Kx/4NBCiqJBqKgAAAAAOgAAAAAIAACAAAAA8hF97kWj0L0+4K8vnWzWsP5ACePKPZJn1HF4oaYghIYAAAAD4XqYX2wyze4aDeMhLprg+j1yWbp07FkHa76jxOtAULCNf06IV0IDFQqco7JyLHwYpgwlg63rhW1uKFpu2k5Q2MfUVfKkVO4ezrUj8V/eI9Vm5OYuUFwPu8VOxn/JFpY/42f/tMeq5IYUp1fITca9Tbs1yk+ww7AWMuIo9vLXwUEAAAACh8BdqnIrBuZhVYY9kemsb5ESOTTV1PC2ZSkNLXkZcjCu+2gZGpWY5MEKuQ3c56Jm8GAuFcH5EPGjdorpjF86N</EncryptedPassword>
+    <History>True|2024-11-29T00:41:14.4758621Z||;False|2024-11-28T21:36:32.4064903-03:00||;False|2024-11-28T21:27:27.2964801-03:00||;False|2024-11-28T21:17:37.1442004-03:00||;False|2024-11-28T21:16:04.4261710-03:00||;False|2024-11-28T21:12:29.0468574-03:00||;False|2024-11-28T21:09:29.5183250-03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=aspnet-53bc9b9d-9d6a-45d4-8429-2a2761773502%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="verdeconecta.Models.AppDbContext">
+      <Value>Server=tcp:verdeconectaserver.database.windows.net,1433%3bInitial Catalog=verdeconectaDb%3bPersist Security Info=False%3bUser ID=FelipeKutschera%3bPassword=%40Bickdh01%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
