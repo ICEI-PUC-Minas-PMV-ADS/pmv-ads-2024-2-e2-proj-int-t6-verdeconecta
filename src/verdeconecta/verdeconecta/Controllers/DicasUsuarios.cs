@@ -5,13 +5,37 @@ using verdeconecta.Models;
 
 namespace verdeconecta.Controllers
 {
-        public class DicasNutricionaisController : Controller
+    public class DicasUsuariosController : Controller
     {
         private readonly AppDbContext _context;
 
-        public DicasNutricionaisController(AppDbContext context)
+        public DicasUsuariosController(AppDbContext context)
         {
             _context = context;
+        }
+
+        // Método para aumentar o contador de likes
+        [HttpPost]
+        public async Task<IActionResult> Like(int id)
+        {
+            var dica = await _context.DicasNutricionais.FindAsync(id);
+            if (dica == null) return NotFound();
+
+            dica.Likes++;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        // Método para aumentar o contador de dislikes
+        [HttpPost]
+        public async Task<IActionResult> Dislike(int id)
+        {
+            var dica = await _context.DicasNutricionais.FindAsync(id);
+            if (dica == null) return NotFound();
+
+            dica.Dislikes++;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
         }
 
         // GET: DicasNutricionais
@@ -38,11 +62,6 @@ namespace verdeconecta.Controllers
             return View(usuario);
         }
 
-        // GET: Usuarios/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
 
         // POST: Usuarios/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.

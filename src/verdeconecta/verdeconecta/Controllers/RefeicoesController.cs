@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Security.Principal;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -166,6 +169,33 @@ namespace verdeconecta.Controllers
         private bool RefeicaoExists(int id)
         {
             return _context.Refeicoes.Any(e => e.Id == id);
+        }
+        public async Task<IActionResult> RelatorioRefeicao()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                string NameIdentifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int idUsuario = Int32.Parse(NameIdentifier);
+
+                var refeicoes = await _context.Refeicoes
+                    .Where(r => r.UsuarioId == idUsuario)
+                    .Include(r => r.Alimento)
+                    .OrderByDescending(r => r.DataDaRefeicao)
+                    .ToListAsync();
+
+                if (refeicoes == null)
+                {
+                    return NotFound();
+                }
+
+                ViewBag.Refeicao = refeicoes;
+
+                return View(refeicoes);
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }
