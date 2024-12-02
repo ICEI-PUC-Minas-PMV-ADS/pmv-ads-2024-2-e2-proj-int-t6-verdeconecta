@@ -1,0 +1,48 @@
+@model IEnumerable<verdeconecta.Models.DicasNutricionais>
+
+@{
+    ViewData["Title"] = "Dicas Nutricionais";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Data da Dica</th>
+            <th>Likes</th>
+            <th>Dislikes</th>
+            <th>Ações</th>
+            <th>Detalhes</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dica in Model)
+        {
+            <tr>
+                <td>@dica.Id</td>
+                <td>@dica.Titulo</td>
+                <td>@dica.DataDica.ToString("dd/MM/yyyy")</td>
+                <td>@dica.Likes</td>
+                <td>@dica.Dislikes</td>
+                <td>
+                    <!-- Botões de Like e Dislike -->
+                    <form asp-action="Like" asp-route-id="@dica.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-success">👍 (@dica.Likes)</button>
+                    </form>
+                    <form asp-action="Dislike" asp-route-id="@dica.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">👎 (@dica.Dislikes)</button>
+                    </form>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@dica.Id" class="btn btn-info">Ver Detalhes</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
