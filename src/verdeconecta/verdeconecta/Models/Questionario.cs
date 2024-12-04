@@ -15,8 +15,10 @@ namespace verdeconecta.Models
 
         [Display(Name = "Restrições alimentares")]
         public bool TemRestricaoAlimentar { get; set; }
-        public string RestricaoDetalhes { get; set; }
 
+        [ScaffoldColumn(false)]
+        public string RestricaoDetalhes { get; set; }
+        
         [Display(Name = "Nível de atividade física")]
         public NivelAtividadeFisica NivelAtividadeFisica { get; set; }
 
@@ -34,6 +36,7 @@ namespace verdeconecta.Models
 
         [Display(Name = "Usuário")]
         public int UsuarioId { get; set; }
+        [Display(Name = "Usuário")]
 
         [ForeignKey("UsuarioId")]
         public Usuario Usuario { get; set; }

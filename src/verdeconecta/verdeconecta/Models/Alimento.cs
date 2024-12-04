@@ -16,6 +16,7 @@ namespace verdeconecta.Models
         [Required(ErrorMessage = "Obrigatório informar a quantidade!")]
         public float Fibras { get; set; }
         public float Proteinas { get; set; }
+        [Display(Name = "Proteínas")]
         public float Carboidratos { get; set; }
         public float Gorduras { get; set; }
         public float Calorias { get; set; }
