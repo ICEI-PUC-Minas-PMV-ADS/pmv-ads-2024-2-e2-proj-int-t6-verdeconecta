@@ -6,18 +6,22 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUl6meUsuTEqCEJf+oFfe9wAAAAACAAAAAAAQZgAAAAEAACAAAABD7cqqp+sIKS+fZ79pNgW3nwsxy9s4Kx/4NBCiqJBqKgAAAAAOgAAAAAIAACAAAAA8hF97kWj0L0+4K8vnWzWsP5ACePKPZJn1HF4oaYghIYAAAAD4XqYX2wyze4aDeMhLprg+j1yWbp07FkHa76jxOtAULCNf06IV0IDFQqco7JyLHwYpgwlg63rhW1uKFpu2k5Q2MfUVfKkVO4ezrUj8V/eI9Vm5OYuUFwPu8VOxn/JFpY/42f/tMeq5IYUp1fITca9Tbs1yk+ww7AWMuIo9vLXwUEAAAACh8BdqnIrBuZhVYY9kemsb5ESOTTV1PC2ZSkNLXkZcjCu+2gZGpWY5MEKuQ3c56Jm8GAuFcH5EPGjdorpjF86N</EncryptedPassword>
-    <History>True|2024-11-29T00:41:14.4758621Z||;False|2024-11-28T21:36:32.4064903-03:00||;False|2024-11-28T21:27:27.2964801-03:00||;False|2024-11-28T21:17:37.1442004-03:00||;False|2024-11-28T21:16:04.4261710-03:00||;False|2024-11-28T21:12:29.0468574-03:00||;False|2024-11-28T21:09:29.5183250-03:00||;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUl6meUsuTEqCEJf+oFfe9wAAAAACAAAAAAAQZgAAAAEAACAAAABJZFHQ81yHBiQ/K0JSBcE3M2PLLjKEa4vzpa+pAwOzMQAAAAAOgAAAAAIAACAAAADgkPgG3BjUDYO8Wnv/IeqjuR6ubdLwGo4Oarf2prE/TYAAAAC3uaHZAT87D2MyhzHEgaFnM3gzIAN6iOcgeqWUCzbGHw82BC+HK66WCVkTL0h23hpzXIerDkrs6PG4+4I8u7SZY/YyjxeXJsTMXMCrIspDzxpXH2bVdPfxXgPhuU16QLQtTkiahvq7gifjkTG9gf2u8DlQXs3kyKtNmn2DvTD/zUAAAACufyO18IEY6KXlF/WQfqapc8pvFcvuPsAbsctibRCxU+XKxjPzhXCmpNZdtMB/kmea/8TC8TDl+IMSBCHN+oeT</EncryptedPassword>
+    <History>True|2024-12-04T00:59:49.3898036Z||;True|2024-12-03T21:24:44.4421875-03:00||;True|2024-12-03T21:12:19.5830438-03:00||;False|2024-12-03T21:07:33.4909438-03:00||;True|2024-12-03T21:02:39.9913155-03:00||;True|2024-12-03T20:21:55.6773845-03:00||;True|2024-12-03T18:25:17.0652094-03:00||;True|2024-12-03T18:13:44.2295511-03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
-    <DestinationConnectionStrings Include="DefaultConnection">
-      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=aspnet-53bc9b9d-9d6a-45d4-8429-2a2761773502%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    <AzureDBConnectionStrings Include="Data Source=verdeconectaserver.database.windows.net,1433;Initial Catalog=verdeconecta_db;Authentication=ActiveDirectoryManagedIdentity" />
+    <AzureDBConnectionStrings Include="Server=tcp:verdeconectaserver.database.windows.net;Authentication=Active Directory Default;Database=verdeconecta_db" />
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DatabaseConnection">
+      <Value>Server=tcp:verdeconectaserver.database.windows.net,1433%3bInitial Catalog=VerdeConectaDb%3bPersist Security Info=False%3bUser ID=FelipeKutschera%3bPassword=%40Verde123456%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
     </DestinationConnectionStrings>
   </ItemGroup>
   <ItemGroup>
     <EFMigrations Include="verdeconecta.Models.AppDbContext">
-      <Value>Server=tcp:verdeconectaserver.database.windows.net,1433%3bInitial Catalog=verdeconectaDb%3bPersist Security Info=False%3bUser ID=FelipeKutschera%3bPassword=%40Bickdh01%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+      <Value>Server=tcp:verdeconectaserver.database.windows.net,1433%3bInitial Catalog=VerdeConectaDb%3bPersist Security Info=False%3bUser ID=FelipeKutschera%3bPassword=%40Verde123456%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
     </EFMigrations>
   </ItemGroup>
 </Project>

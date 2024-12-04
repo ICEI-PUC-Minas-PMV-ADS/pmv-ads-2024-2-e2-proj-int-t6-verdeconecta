@@ -42,9 +42,6 @@ namespace verdeconecta.Migrations
                     b.Property<float>("Gorduras")
                         .HasColumnType("real");
 
-                    b.Property<int>("Gramas")
-                        .HasColumnType("int");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -186,6 +183,9 @@ namespace verdeconecta.Migrations
 
                     b.Property<DateTime>("DataDaRefeicao")
                         .HasColumnType("datetime2");
+
+                    b.Property<float>("Quantidade")
+                        .HasColumnType("real");
 
                     b.Property<int>("TipoRefeicao")
                         .HasColumnType("int");

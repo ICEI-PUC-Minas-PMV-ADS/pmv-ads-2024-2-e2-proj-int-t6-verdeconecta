@@ -1,20 +1,29 @@
 {
   "dependencies": {
-    "mssql1": {
+    "mssql2": {
       "restored": true,
-      "restoreTime": "2024-11-29T00:57:11.5724054Z"
+      "restoreTime": "2024-12-04T00:57:14.3395886Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-12-04T00:21:54.4134095Z"
     }
   },
   "parameters": {
-    "mssql1.subscriptionId": {
-      "Name": "mssql1.subscriptionId",
-      "Type": "subscription",
-      "Value": "d8a50662-d41e-407c-86f6-6b1e9ae4a3bf"
-    },
-    "mssql1.resourceGroupName": {
-      "Name": "mssql1.resourceGroupName",
+    "mssql2.serviceConnectorResourceGroupName": {
+      "Name": "mssql2.serviceConnectorResourceGroupName",
       "Type": "resourceGroup",
       "Value": "verdeconecta_group"
+    },
+    "mssql2.resourceGroupName": {
+      "Name": "mssql2.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "verdeconecta_group"
+    },
+    "mssql2.subscriptionId": {
+      "Name": "mssql2.subscriptionId",
+      "Type": "subscription",
+      "Value": "d8a50662-d41e-407c-86f6-6b1e9ae4a3bf"
     }
   }
 }
