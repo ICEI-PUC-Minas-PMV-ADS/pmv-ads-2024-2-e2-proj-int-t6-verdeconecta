@@ -14,9 +14,9 @@ namespace verdeconecta.Models
         public TipoDieta? TipoDieta { get; set; }
 
         [Display(Name = "Restrições alimentares")]
-        public bool TemRestricaoAlimentar { get; set; }
-
-        [ScaffoldColumn(false)]
+        public string TemRestricaoAlimentar { get; set; }
+        
+        [Display(Name = "Descreva mais sobre suas restrições alimentares")]
         public string RestricaoDetalhes { get; set; }
         
         [Display(Name = "Nível de atividade física")]
