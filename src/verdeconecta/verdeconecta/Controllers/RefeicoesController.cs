@@ -13,7 +13,8 @@ using verdeconecta.Models;
 
 namespace verdeconecta.Controllers
 {
-    [Authorize(Roles = "Cliente")]
+    [Authorize]
+
     public class RefeicoesController : Controller
     {
         private readonly AppDbContext _context;
