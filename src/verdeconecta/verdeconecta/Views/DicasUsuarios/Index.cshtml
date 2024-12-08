@@ -81,8 +81,7 @@
                     <tr>
                         <th>Título</th>
                         <th>Data da Dica</th>
-                        <th>Likes</th>
-                        <th>Dislikes</th>
+
                         <th>Ações</th>
                         <th>Detalhes</th>
                     </tr>
@@ -93,8 +92,7 @@
                         <tr>
                             <td>@dica.Titulo</td>
                             <td>@dica.DataDica.ToString("dd/MM/yyyy")</td>
-                            <td>@dica.Likes</td>
-                            <td>@dica.Dislikes</td>
+
                             <td>
                                 <!-- Botões de Like e Dislike -->
                                 <form asp-action="Like" asp-route-id="@dica.Id" method="post" style="display:inline;">
