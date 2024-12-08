@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -35,13 +36,26 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Metas">Metas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="DicasNutricionais">Cadastro de Dicas para Nutricionais</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="DicasUsuarios">Acessando dicas</a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var perfil = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                            if (perfil == "Nutricionista")
+                            {
+                                <li class="nav-item">
+                                    <a asp-controller="DicasNutricionais" asp-action="Index" asp-route-perfil="Nutricionista">
+                                        Dicas para Nutricionistas
+                                    </a>
+                                </li>
+                            }
+                            else if (perfil == "Cliente")
+                            {
+                                <li class="nav-item">
+                                    <a asp-controller="DicasUsuarios" asp-action="Index" asp-route-perfil="Cliente">
+                                        Dicas para Clientes
+                                    </a>
+                                </li>
+                            }
+                        }
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="RelacionamentoNutricionistaClientes">Relacionamento</a>
                             <a class="nav-link" asp-area="" asp-controller="Questionarios">Questionário</a>
@@ -52,8 +66,10 @@
 
                         @if (User.Identity.IsAuthenticated)
                         {
+                            var perfil = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
                             <li class="nav-item">
-                                Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                                Olá, @User.Identity.Name (<span class="text-info">@perfil</span>)
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="EsqueciSenha">Redefinir Senha</a>
                             </li>
                         }

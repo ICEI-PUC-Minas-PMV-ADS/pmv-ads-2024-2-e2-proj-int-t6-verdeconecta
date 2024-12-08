@@ -10,7 +10,7 @@ using verdeconecta.Models;
 
 namespace verdeconecta.Controllers
 {
-    [Authorize(Roles ="Cliente")]
+    [Authorize]
     public class MetasController : Controller
     {
         private readonly AppDbContext _context;

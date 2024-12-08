@@ -1,0 +1,16 @@
+﻿@model verdeconecta.Models.DicasNutricionais
+@{
+    ViewData["Title"] = "Excluir Dica Nutricional";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<p>Tem certeza de que deseja excluir a dica nutricional <strong>@Model.Titulo</strong>?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

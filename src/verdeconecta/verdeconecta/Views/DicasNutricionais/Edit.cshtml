@@ -1,0 +1,27 @@
+﻿@model verdeconecta.Models.DicasNutricionais
+@{
+    ViewData["Title"] = "Editar Dica Nutricional";
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+
+<form asp-action="Edit" method="post">
+    <div class="mb-3">
+        <label for="Titulo" class="form-label">Título</label>
+        <input type="text" class="form-control" id="Titulo" name="Titulo" value="@Model.Titulo" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="Dica" class="form-label">Descrição</label>
+        <textarea class="form-control" id="Dica" name="Dica" rows="4" required>@Model.Dica</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="DataDica" class="form-label">Data da Dica</label>
+        <input type="date" class="form-control" id="DataDica" name="DataDica" value="@Model.DataDica.ToString("yyyy-MM-dd")" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

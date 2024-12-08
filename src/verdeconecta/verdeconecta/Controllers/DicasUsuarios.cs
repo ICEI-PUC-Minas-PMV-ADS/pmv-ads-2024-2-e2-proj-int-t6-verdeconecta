@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using verdeconecta.Models;
+using verdeconecta.Filters;
 
 namespace verdeconecta.Controllers
 {
+    [Authorize]
+    [PerfilAuthorize("Cliente")]
     public class DicasUsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -42,6 +45,12 @@ namespace verdeconecta.Controllers
         public async Task<IActionResult> Index()
         {
             return View(model: await _context.DicasNutricionais.ToListAsync());
+        }
+
+        // Método auxiliar para escolher perfil, caso necessário
+        public IActionResult EscolhaPerfil()
+        {
+            return View(); // Crie uma view que permita escolher o perfil
         }
 
         // GET: Usuarios/Details/5
