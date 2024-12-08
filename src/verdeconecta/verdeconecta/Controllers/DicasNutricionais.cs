@@ -2,10 +2,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using verdeconecta.Models;
+using verdeconecta.Filters;
 
 namespace verdeconecta.Controllers
 {
-        public class DicasNutricionaisController : Controller
+
+    [Authorize]
+    [PerfilAuthorize("Nutricionista")] // Restringe acesso ao perfil Nutricionista
+
+    public class DicasNutricionaisController : Controller
     {
         private readonly AppDbContext _context;
 

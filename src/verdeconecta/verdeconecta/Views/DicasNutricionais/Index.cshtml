@@ -4,35 +4,61 @@
     ViewData["Title"] = "Dicas Nutricionais";
 }
 
-<h2>@ViewData["Title"]</h2>
+<div class="container mt-4">
+    <!-- Título da Página -->
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Adicionar Nova Dica</a>
-</p>
+    <!-- Botão de Adicionar Nova Dica -->
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Adicionar Nova Dica
+        </a>
+    </div>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Título</th>
-            <th>Data da Dica</th>
-            <th>Ações</th>
-            <th>Detalhes</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var dica in Model)
-        {
-            <tr>
-                <td>@dica.Id</td>
-                <td>@dica.Titulo</td>
-                <td>@dica.DataDica.ToString("dd/MM/yyyy")</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@dica.Id" class="btn btn-info">Ver Detalhes</a>
-                </td>
-
-            </tr>
-        }
-    </tbody>
-</table>
+    <!-- Tabela -->
+    <div class="table-responsive">
+        <table class="table table-striped table-borderless align-middle">
+            <thead class="table-white">
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Data da Dica</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Any())
+                {
+                    @foreach (var dica in Model)
+                    {
+                        <tr>
+                            <td>@dica.Id</td>
+                            <td>@dica.Titulo</td>
+                            <td>@dica.DataDica.ToString("dd/MM/yyyy")</td>
+                            <td>
+                                <!-- Botão para Visualizar Detalhes -->
+                                <a asp-action="Details" asp-route-id="@dica.Id" class="btn btn-primary btn-sm text-white">
+                                    <i class="bi bi-eye"></i> Ver Detalhes
+                                </a>
+                                <!-- Botão para Editar -->
+                                <a asp-action="Edit" asp-route-id="@dica.Id" class="btn btn-secondary btn-sm text-white">
+                                    <i class="bi bi-pencil"></i> Editar
+                                </a>
+                                <!-- Botão para Excluir -->
+                                <a asp-action="Delete" asp-route-id="@dica.Id" class="btn btn-danger btn-sm text-white">
+                                    <i class="bi bi-trash"></i> Excluir
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">Nenhuma dica encontrada.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
