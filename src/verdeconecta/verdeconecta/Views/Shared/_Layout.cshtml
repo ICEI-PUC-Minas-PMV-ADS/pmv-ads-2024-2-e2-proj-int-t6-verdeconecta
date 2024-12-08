@@ -36,30 +36,26 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Metas">Metas</a>
                         </li>
-
-                        <li class="nav-item">
-                            @if (User.Identity.IsAuthenticated)
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var perfil = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+                            if (perfil == "Nutricionista")
                             {
-                                var perfil = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-                                if (perfil == "Nutricionista")
-                                {
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="DicasNutricionais" asp-action="Index" asp-route-perfil="Nutricionista">
+                                    <a asp-controller="DicasNutricionais" asp-action="Index" asp-route-perfil="Nutricionista">
                                         Dicas para Nutricionistas
                                     </a>
                                 </li>
-                                }
-                                else if (perfil == "Cliente")
-                                {
+                            }
+                            else if (perfil == "Cliente")
+                            {
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="DicasUsuarios" asp-action="Index" asp-route-perfil="Cliente">
+                                    <a asp-controller="DicasUsuarios" asp-action="Index" asp-route-perfil="Cliente">
                                         Dicas para Clientes
                                     </a>
                                 </li>
-                                }
                             }
-                        </li>
-
+                        }
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="RelacionamentoNutricionistaClientes">Relacionamento</a>
                             <a class="nav-link" asp-area="" asp-controller="Questionarios">Questionário</a>

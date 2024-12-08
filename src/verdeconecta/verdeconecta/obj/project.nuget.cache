@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V490lhni/MM=",
+  "dgSpecHash": "+RReMO6Pqc8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\ultimaVersao\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+  "projectFilePath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\verde final\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laris\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\laris\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
