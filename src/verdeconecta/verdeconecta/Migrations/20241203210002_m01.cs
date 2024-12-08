@@ -18,11 +18,11 @@ namespace verdeconecta.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Fibras = table.Column<float>(type: "real", nullable: false),
-                    Proteinas = table.Column<float>(type: "real", nullable: false),
-                    Carboidratos = table.Column<float>(type: "real", nullable: false),
-                    Gorduras = table.Column<float>(type: "real", nullable: false),
-                    Calorias = table.Column<float>(type: "real", nullable: false)
+                    Fibras = table.Column<double>(type: "float", nullable: false),
+                    Proteinas = table.Column<double>(type: "float", nullable: false),
+                    Carboidratos = table.Column<double>(type: "float", nullable: false),
+                    Gorduras = table.Column<double>(type: "float", nullable: false),
+                    Calorias = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -129,7 +129,12 @@ namespace verdeconecta.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TipoRefeicao = table.Column<int>(type: "int", nullable: false),
                     DataDaRefeicao = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Quantidade = table.Column<float>(type: "real", nullable: false),
+                    Quantidade = table.Column<double>(type: "float", nullable: false),
+                    Fibras = table.Column<double>(type: "float", nullable: false),
+                    Proteinas = table.Column<double>(type: "float", nullable: false),
+                    Carboidratos = table.Column<double>(type: "float", nullable: false),
+                    Gorduras = table.Column<double>(type: "float", nullable: false),
+                    Calorias = table.Column<double>(type: "float", nullable: false),
                     AlimentoId = table.Column<int>(type: "int", nullable: false),
                     UsuarioId = table.Column<int>(type: "int", nullable: false)
                 },

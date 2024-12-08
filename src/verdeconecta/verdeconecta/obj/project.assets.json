@@ -7911,23 +7911,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daianne\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Nicolas\\.nuget\\packages\\": {},
+    "D:\\Visual studio\\SDK e componentes\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daianne\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "projectName": "verdeconecta",
-      "projectPath": "C:\\Users\\Daianne\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
-      "packagesPath": "C:\\Users\\Daianne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daianne\\Documents\\GitHub\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\obj\\",
+      "projectPath": "C:\\Users\\Nicolas\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicolas\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\\src\\verdeconecta\\verdeconecta\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Visual studio\\SDK e componentes\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daianne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7936,6 +7936,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7953,8 +7954,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -8016,7 +8016,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

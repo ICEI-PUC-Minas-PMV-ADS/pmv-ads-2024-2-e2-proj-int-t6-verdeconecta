@@ -67,6 +67,20 @@ namespace verdeconecta.Controllers
         {
             if (ModelState.IsValid)
             {
+                var alimento = await _context.Alimentos.FindAsync(refeicao.AlimentoId);
+                if(alimento == null)
+                {
+                    ModelState.AddModelError("", "Alimento não encontrado!");
+                    ViewData["AlimentoId"] = new SelectList(_context.Alimentos, "Id", "Nome", refeicao.AlimentoId);
+                    ViewData["UsuarioId"] = new SelectList(_context.Alimentos, "Id", "Email", refeicao.UsuarioId);
+                    return View(refeicao);
+                }
+                double fator = refeicao.Quantidade / 100;
+                refeicao.Calorias = (double)(alimento.Calorias * fator);
+                refeicao.Proteinas = (double)(alimento.Proteinas * fator);
+                refeicao.Fibras = (double)(alimento.Fibras * fator);
+                refeicao.Carboidratos = (double)(alimento.Carboidratos * fator);
+                refeicao.Gorduras = (double)(alimento.Gorduras * fator);
                 _context.Add(refeicao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

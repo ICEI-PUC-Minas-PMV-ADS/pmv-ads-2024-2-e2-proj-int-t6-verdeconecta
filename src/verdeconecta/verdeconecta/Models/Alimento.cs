@@ -14,12 +14,11 @@ namespace verdeconecta.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar a quantidade!")]
-        public float Fibras { get; set; }
-        public float Proteinas { get; set; }
-        [Display(Name = "Proteínas")]
-        public float Carboidratos { get; set; }
-        public float Gorduras { get; set; }
-        public float Calorias { get; set; }
+        public double Fibras { get; set; }
+        public double Proteinas { get; set; }
+        public double Carboidratos { get; set; }
+        public double Gorduras { get; set; }
+        public double Calorias { get; set; }
         public ICollection<Refeicao> Refeicoes { get; set; }
     }
 }

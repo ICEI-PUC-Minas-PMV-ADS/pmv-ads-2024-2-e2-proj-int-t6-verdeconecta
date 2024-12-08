@@ -59,6 +59,7 @@ namespace verdeconecta.Controllers
         {
             if (ModelState.IsValid)
             {
+                Console.WriteLine($"{alimento.Gorduras}, {alimento.Proteinas}, {alimento.Fibras}, {alimento.Carboidratos}");
                 _context.Add(alimento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

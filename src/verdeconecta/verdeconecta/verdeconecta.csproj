@@ -37,7 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Refeicoes\Create.cshtml" />
     <None Include="Views\Refeicoes\Delete.cshtml" />
     <None Include="Views\Refeicoes\Details.cshtml" />
     <None Include="Views\Refeicoes\Edit.cshtml" />
