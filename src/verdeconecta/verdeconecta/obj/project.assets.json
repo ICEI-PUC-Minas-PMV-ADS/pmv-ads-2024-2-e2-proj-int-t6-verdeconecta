@@ -7916,11 +7916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\verde final\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectUniqueName": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\ultimaVersao\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "projectName": "verdeconecta",
-      "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\verde final\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
+      "projectPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\ultimaVersao\\src\\verdeconecta\\verdeconecta\\verdeconecta.csproj",
       "packagesPath": "C:\\Users\\laris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\verde final\\src\\verdeconecta\\verdeconecta\\obj\\",
+      "outputPath": "C:\\Users\\laris\\OneDrive\\Área de Trabalho\\ultimaVersao\\src\\verdeconecta\\verdeconecta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laris\\AppData\\Roaming\\NuGet\\NuGet.Config",
