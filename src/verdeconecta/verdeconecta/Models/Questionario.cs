@@ -28,8 +28,8 @@ namespace verdeconecta.Models
         [Display(Name = "Número de refeições por dia")]
         public int RefeicoesPorDia { get; set; }
 
-        [Display(Name = "Horário das principais refeições")]
-        public string HorarioRefeicoes { get; set; }
+        [Display(Name = "Horário das Refeições")]
+        public int HorarioRefeicoes { get; set; }
 
         [Display(Name = "Consumo de frutas e vegetais")]
         public ConsumoFrutasVegetais ConsumoFrutasVegetais { get; set; }

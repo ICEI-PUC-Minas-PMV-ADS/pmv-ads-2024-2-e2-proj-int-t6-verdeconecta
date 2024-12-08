@@ -18,7 +18,12 @@
                 <span asp-validation-for="TipoDieta" class="text-danger"></span>
             </div>
              <div class="form-group">
-                <label asp-for="RestricaoDetalhes" class="control-label">Tem alguma restrição alimentar?Se sim, detalhe.</label>
+                <label asp-for="TemRestricaoAlimentar" class="control-label">Tem alguma restrição alimentar?</label>
+                <input asp-for="TemRestricaoAlimentar" class="form-control" />
+                <span asp-validation-for="TemRestricaoAlimentar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RestricaoDetalhes" class="control-label">Se sim, detalhe.</label>
                 <input asp-for="RestricaoDetalhes" class="form-control" />
                 <span asp-validation-for="RestricaoDetalhes" class="text-danger"></span>
             </div>
@@ -36,6 +41,11 @@
                 <label asp-for="RefeicoesPorDia" class="control-label"></label>
                 <input asp-for="RefeicoesPorDia" class="form-control" />
                 <span asp-validation-for="RefeicoesPorDia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HorarioRefeicoes" class="control-label"></label>
+                <input asp-for="HorarioRefeicoes" class="form-control" />
+                <span asp-validation-for="HorarioRefeicoes" class="text-danger"></span>
             </div>
             
             <div class="form-group">
