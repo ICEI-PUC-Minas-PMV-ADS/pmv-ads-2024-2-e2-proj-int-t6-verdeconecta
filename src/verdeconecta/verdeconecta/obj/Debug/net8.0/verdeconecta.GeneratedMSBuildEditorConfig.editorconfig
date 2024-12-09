@@ -17,199 +17,199 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = verdeconecta
 build_property.RootNamespace = verdeconecta
-build_property.ProjectDir = C:\Users\laris\OneDrive\Área de Trabalho\verde final\src\verdeconecta\verdeconecta\
+build_property.ProjectDir = C:\Users\Nicolas\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\laris\OneDrive\Área de Trabalho\verde final\src\verdeconecta\verdeconecta
+build_property.MSBuildProjectDirectory = C:\Users\Nicolas\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t6-verdeconecta\src\verdeconecta\verdeconecta
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Alimentos/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Alimentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Alimentos/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Alimentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Alimentos/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Alimentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Alimentos/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Alimentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Alimentos/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Alimentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxpbWVudG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/AccessDenied.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasNutricionais/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNOdXRyaWNpb25haXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasUsuarios/AccessDenied.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasUsuarios/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNVc3Vhcmlvc1xBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasUsuarios/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasUsuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNVc3Vhcmlvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/DicasUsuarios/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/DicasUsuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljYXNVc3Vhcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Home/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Home/Privacy.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Metas/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Metas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Metas/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Metas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Metas/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Metas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Metas/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Metas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Metas/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Metas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWV0YXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Questionarios/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Questionarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Questionarios/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Questionarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Questionarios/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Questionarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Questionarios/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Questionarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Questionarios/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Questionarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25hcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYWNpb25hbWVudG9OdXRyaWNpb25pc3RhQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYWNpb25hbWVudG9OdXRyaWNpb25pc3RhQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYWNpb25hbWVudG9OdXRyaWNpb25pc3RhQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYWNpb25hbWVudG9OdXRyaWNpb25pc3RhQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/RelacionamentoNutricionistaClientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYWNpb25hbWVudG9OdXRyaWNpb25pc3RhQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Shared/Error.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/AccessDenied.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/ConfirmacaoEsqueciSenha.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/ConfirmacaoEsqueciSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ29uZmlybWFjYW9Fc3F1ZWNpU2VuaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Create.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Delete.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Details.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Edit.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/EsqueciSenha.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/EsqueciSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRXNxdWVjaVNlbmhhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Index.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/Login.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Usuarios/RedefinirSenha.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Usuarios/RedefinirSenha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcUmVkZWZpbmlyU2VuaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/_ViewImports.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/_ViewStart.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/laris/OneDrive/Área de Trabalho/verde final/src/verdeconecta/verdeconecta/Views/Shared/_Layout.cshtml]
+[C:/Users/Nicolas/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t6-verdeconecta/src/verdeconecta/verdeconecta/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i65aeitbfa
