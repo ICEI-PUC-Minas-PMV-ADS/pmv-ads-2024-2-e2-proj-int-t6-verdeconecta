@@ -1,10 +1,11 @@
-﻿using NuGet.Versioning;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using verdeconecta.Models;
 
 namespace verdeconecta.Models
 {
     [Table("Refeicao")]
+
     public class Refeicao
     {
         [Key]
@@ -25,22 +26,24 @@ namespace verdeconecta.Models
 
         public int AlimentoId { get; set; }
 
-            [ForeignKey("AlimentoId")]
-            public Alimento Alimento { get; set; }
+        [ForeignKey("AlimentoId")]
+        public Alimento Alimento { get; set; }
 
-            public int UsuarioId { get; set; }
+        public int UsuarioId { get; set; }
 
-            [ForeignKey("UsuarioId")]
-            public Usuario Usuario { get; set; }
+        [ForeignKey("UsuarioId")]
+        public Usuario Usuario { get; set; }
+        
+        // Relacionamento com os comentários    
+        public ICollection<Comentario> Comentarios { get; set; }
     }
 
-            public enum TipoRefeicao
-         {
-            CafeDaManha,
-            Almoco,
-            CafeDaTarde,
-            Jantar,
-            Lanches
-         }
+    public enum TipoRefeicao
+    {
+        CafeDaManha,
+        Almoco,
+        CafeDaTarde,
+        Jantar,
+        Lanches
+    }
 }
-
