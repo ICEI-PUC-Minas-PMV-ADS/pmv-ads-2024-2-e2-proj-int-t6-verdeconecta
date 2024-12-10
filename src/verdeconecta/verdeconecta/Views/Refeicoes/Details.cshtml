@@ -1,84 +1,166 @@
-﻿@model verdeconecta.Models.Refeicao
+@model verdeconecta.Models.Refeicao
+@using System.Security.Claims
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
 }
 
 <h1>Details</h1>
 
 <div>
-    <h4>Refeicao</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TipoRefeicao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TipoRefeicao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataDaRefeicao)
-        </dt>
 
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataDaRefeicao)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantidade)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Quantidade)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Fibras)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Fibras)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Proteinas)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Proteinas)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Carboidratos)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Carboidratos)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Calorias)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Calorias)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Gorduras)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Gorduras)
-        </dd>
+	<h4>Refeicao</h4>
+	<hr />
+	<div class="d-flex container">
+
+		<div class="container " style="max-width:40%; margin: 0;">
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.TipoRefeicao)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.TipoRefeicao)
+				</dd>
+			</div>
 
 
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.DataDaRefeicao)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.DataDaRefeicao)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Quantidade)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Quantidade)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Fibras)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Fibras)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Proteinas)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Proteinas)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Carboidratos)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Carboidratos)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Calorias)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Calorias)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Gorduras)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Gorduras)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Alimento)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Alimento.Nome)
+				</dd>
+			</div>
+
+			<div class="row">
+				<div class="col fw-bold">
+					@Html.DisplayNameFor(model => model.Usuario)
+				</div>
+
+				<dd class="col">
+					@Html.DisplayFor(model => model.Usuario.Email)
+				</dd>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-items-center" style="width:100%;">
+			@if (User.Identity.IsAuthenticated)
+			{
+				var perfil = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+				<h4>Comentários</h4>
+				@if (Model.Comentarios != null && Model.Comentarios.Any())
+				{
+					<ul class="list-group">
+						@foreach (var comentario in Model.Comentarios)
+						{
+							<li class="list-group-item">
+								<strong>@comentario.NutricionistaName:</strong> @comentario.NutricionistaComment
+								<br />
+								<small class="text-muted">Criado em: @comentario.CreatedAt.ToString("g")</small>
+							</li>
+						}
+					</ul>
+				}
+				else
+				{
+					<p>Nenhum comentário adicionado ainda.</p>
+				}
+
+				<hr />
+
+				if (perfil == "Nutricionista")
+				{
+					<h4>Adicionar Comentário</h4>
+					<form asp-action="AdicionarComentario" method="post" style="width:100%;">
+						<input type="hidden" name="RefeicaoId" value="@Model.Id" />
+						<div class="form-group">
+							<label for="NutricionistaComment">Comentário:</label>
+							<textarea id="NutricionistaComment" name="NutricionistaComment" class="form-control" rows="4"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary mt-2">Salvar Comentário</button>
+					</form>
+				}
 
 
-
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Alimento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Alimento.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Usuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Usuario.Email)
-        </dd>
-    </dl>
+			}
+		</div>
+	</div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+	<a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+	<a asp-action="Index">Back to List</a>
 </div>
