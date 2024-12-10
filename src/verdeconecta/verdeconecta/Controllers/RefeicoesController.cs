@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Security.Principal;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +36,7 @@ namespace verdeconecta.Controllers
             var refeicao = await _context.Refeicoes
                 .Include(r => r.Alimento)
                 .Include(r => r.Usuario)
+                .Include(r => r.Comentarios)  // Inclui os comentários
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (refeicao == null)
             {
@@ -69,7 +64,7 @@ namespace verdeconecta.Controllers
             if (ModelState.IsValid)
             {
                 var alimento = await _context.Alimentos.FindAsync(refeicao.AlimentoId);
-                if(alimento == null)
+                if (alimento == null)
                 {
                     ModelState.AddModelError("", "Alimento não encontrado!");
                     ViewData["AlimentoId"] = new SelectList(_context.Alimentos, "Id", "Nome", refeicao.AlimentoId);
@@ -212,5 +207,53 @@ namespace verdeconecta.Controllers
                 return NotFound();
             }
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AdicionarComentario(int refeicaoId, string NutricionistaComment)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                // Verificar se o comentário está vazio ou é nulo
+                if (string.IsNullOrWhiteSpace(NutricionistaComment))
+                {
+                    // Retornar uma mensagem de erro ou definir um comentário padrão
+                    return BadRequest("O comentário não pode ser vazio.");
+                }
+
+                // Identifica o usuário logado
+                string nameIdentifier = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                int idNutricionista = Int32.Parse(nameIdentifier);
+
+                // Busca a refeição correspondente
+                var refeicao = await _context.Refeicoes.FindAsync(refeicaoId);
+                if (refeicao == null)
+                {
+                    return NotFound();
+                }
+
+                // Busca o nutricionista logado para pegar o nome
+                var nutricionista = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == idNutricionista);
+
+                // Cria o comentário
+                var consulta = new Comentario
+                {
+                    NutricionistaId = idNutricionista,
+                    NutricionistaName = nutricionista.Nome, // Armazena o nome do nutricionista
+                    RefeicaoId = refeicaoId,
+                    NutricionistaComment = NutricionistaComment,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                // Salva o comentário no banco de dados
+                _context.Comentarios.Add(consulta);     
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Details), new { id = refeicaoId });
+            }
+
+            return Unauthorized();
+        }
+
     }
 }
